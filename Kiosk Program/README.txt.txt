@@ -1,1 +1,0 @@
-As of 09 Spetember 2020, We have discussed to utalize html and javascript for the Kiosk interface. Additionally this interface will host processes. Applications that the Kiosk interface will manage will not be natively integrated into the interface program directly. This is very attune to an operating system managing programs but utalizing html pages.
