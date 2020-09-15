@@ -1,0 +1,15 @@
+div > input{
+    size: 25px;
+    height: 100px;
+    width: 100px;
+    background-size: 25px;
+    position: relative;
+    padding: 10px;
+    left: 25%;
+}
+
+#main{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
