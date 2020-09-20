@@ -1,24 +1,16 @@
 
-
-
-var love = 2;
-
-
-
 //var CryptoJS = require('crypto-js');
  
 function Cryptography(cryptojs)
 {
     this.cryptojs = cryptojs;
+    this.algorithm = "AES";
     this.encrypt = (data, key) => {
-    
         if (data !== undefined && key !== undefined){
             var d = data;
             d = this.cryptojs.AES.encrypt(data,key);
             console.log(d);
-             
-            return d;
-            
+            return d; 
         }
         else{
             return null;
@@ -28,27 +20,34 @@ function Cryptography(cryptojs)
 
     this.decrypt = (data, key) => {
         if (data !== undefined && key !== undefined){
-            require(["crypto-js"], function (CryptoJS) {
-                return CryptoJS.AES.decrypt(data,key);
-            
-            });
+                return hexToString(this.cryptojs.AES.decrypt(data,key).toString());
          }
-      
     }
     this.test = (data,key) => {
-        
         console.log(this.cryptojs);
         let d = data;
         let k = key;
         let e = this.encrypt(d,k);
         console.log(e);
         let un_e = this.decrypt(e,k);
-        if (un_e != undefined)
-        {
-            require(["crypto-js"], function (CryptoJS) {
-            console.log(un_e.toString(CryptoJS.enc.utf8));
         
-                });
-            }
     }
+}
+
+
+function sha256(message, cryptojs)
+{
+    if (cryptojs !== undefined && cryptojs !== null){
+        return cryptojs.SHA256(message);
+    }
+    console.log("crypto js is null or undefined");
+    return null;
+}
+
+function hexToString(hexx) {
+    var hex = hexx.toString();//force conversion
+    var str = '';
+    for (var i = 0; (i < hex.length && hex.substr(i, 2) !== '00'); i += 2)
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    return str;
 }
