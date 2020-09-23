@@ -1,14 +1,17 @@
 
+var defaultCipherSettings = null;
 //var CryptoJS = require('crypto-js');
  
 function Cryptography(cryptojs)
 {
+    console.log(defaultCipherSettings);
+    let cipherSetting = new CipherSettings(defaultCipherSettings);
     this.cryptojs = cryptojs;
     this.algorithm = "AES";
     this.encrypt = (data, key) => {
         if (data !== undefined && key !== undefined){
             var d = data;
-            d = this.cryptojs.AES.encrypt(data,key);
+            d = this.cryptojs.AES.encrypt(data,key,cipherSetting.getCipherSettings());
             console.log(d);
             return d; 
         }
@@ -20,7 +23,7 @@ function Cryptography(cryptojs)
 
     this.decrypt = (data, key) => {
         if (data !== undefined && key !== undefined){
-                return hexToString(this.cryptojs.AES.decrypt(data,key).toString());
+                return hexToString(this.cryptojs.AES.decrypt(data,key,cipherSetting.getCipherSettings()).toString());
          }
     }
     this.test = (data,key) => {
@@ -34,9 +37,14 @@ function Cryptography(cryptojs)
     }
 }
 
+function CipherSettings(cipherSetting){
+    let cipherSettings = cipherSetting != null ? cipherSetting : defaultCipherSettings;
+    this.getCipherSettings = () => {
+        return cipherSettings;
+    }
+}
 
-function sha256(message, cryptojs)
-{
+function sha256(message, cryptojs){
     if (cryptojs !== undefined && cryptojs !== null){
         return cryptojs.SHA256(message);
     }

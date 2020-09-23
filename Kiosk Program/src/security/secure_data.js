@@ -1,10 +1,11 @@
 function SecureData(cryptojs,data,key)
 {
-    this.data = data;
-    this.encrypter = new Cryptography(cryptojs);
-    this.key = key;
-    this.hashedData = sha256(data,cryptojs);
-    this.encryptedData = this.encrypter.encrypt(this.data,this.key);
-    this.getData = () => { return this.encrypter.decrypt(this.encryptedData,this.key);}
+    let sData = data;
+    let sKey = key;
+    let encrypter = new Cryptography(cryptojs);
+    this.hashedData = sha256(sData,cryptojs);
+    this.encryptedData = encrypter.encrypt(sData,sKey);
+    this.getKey = () => sData;
+    this.getData = () => { return encrypter.decrypt(this.encryptedData,sKey);}
     this.getHashDigest = () => {return this.hashedData};
 }
