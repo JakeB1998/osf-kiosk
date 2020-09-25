@@ -1,8 +1,13 @@
 //var http = require('http');
 //var fs = require('fs');
-var server = new Server(new ServerInfo("172.16.0.6",'8080',null));
+const SERVER_REQUEST_GET = 1648;
+const SERVER_REQUEST_POST = 23849;
+const SERVER_REQUEST_UPDATE = 33532;
+const SERVER_REQUEST_DELETE = 43283;
 const PORT=8080; 
+const IP = '50.83.113.1';
 
+var server = new Server(new ServerInfo(IP,PORT,null));
 
 function createServerConncection(http,fs,server){
     return new ServerConnection(server).connect(http,fs);
@@ -14,19 +19,8 @@ function Server(serverInformation){
 }
 
 function ServerConnection(server){
-    this.connect = (http,fs) => {
-        /*
-        fs.readFile("./Kiosk Program/src/main/index.html", function (err, html) {
-
-            if (err) throw err;    
-        
-            http.createServer(function(request, response) {  
-                response.writeHeader(200, {"Content-Type": "text/html"});  
-                response.write(html);  
-                response.end();  
-            }).listen(PORT);
-        });
-        */
+    this.connect = (http) => {
+       
        console.log("Server connected to: " + server.getServerInfo().toString());
         return this;
     };
@@ -36,4 +30,22 @@ function ServerInfo(ip,port,permissions){
     this.getPort = () => port;
     this.getPermissions = () => permissions;
     this.toString = () => {return '\nIP adress: ' + this.getIp() + '\nPort number: ' + this.getPort() + '\nPermissions: ' + this.getPermissions() }
+}
+
+function ServerTransaction(request){
+    this.getRequest = () => request; //request code
+    this.getRequestDescription = () => {
+        switch(this.getRequest()){
+            case SERVER_REQUEST_GET:
+                return "GET";
+            case SERVER_REQUEST_POST:
+                return 'POST';
+            case SERVER_REQUEST_UPDATE:
+                return 'UPDATE';
+            case SERVER_REQUEST_DELETE:
+                return 'DELETE';
+            default:
+                return null;
+        }
+    }
 }
