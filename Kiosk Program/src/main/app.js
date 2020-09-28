@@ -22,7 +22,7 @@ window.addEventListener('load', (event) =>
     let secureData = new SecureData(CryptoJS, 'jmbotka', "adom");
     console.log('decrypted data: ' + secureData.getData().toString()
                 + '\nHashed data: ' + secureData.getHashDigest());
-    createServerConncection(null,null,server);
+    createServerConncection(server);
     return CryptoJS;
     });
 });
