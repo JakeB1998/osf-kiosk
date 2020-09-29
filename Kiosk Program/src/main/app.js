@@ -1,6 +1,8 @@
 
 
-
+/**
+ * Called when the window is fully loaded
+ */
 window.addEventListener('load', (event) =>
 {
     initButtons();
@@ -26,8 +28,9 @@ window.addEventListener('load', (event) =>
     });
 });
 
-
-
+/**
+ * Test callback for http request completed state change
+ */
   function callback(){
     if (this.readyState == 4 && this.status == 200) {
         console.log(this.responseText);
