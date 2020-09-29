@@ -16,21 +16,23 @@ function createServerConncection(server, serverRequest){
 function Server(serverInformation){
     let serverInfo = serverInformation;
     this.getServerInfo = () => serverInfo;
-    this.createServerRequest = (requestCode, params) => new ServerRequest(requestCode, params);
+    this.createServerRequest = (requestCode = null, resource = null, async = null, callback = null) => new ServerRequest(requestCode, resource,async,callback);
     this.sendServerRequest = (serverRequest) => serverRequest.getHttpRequest().send(); 
 }
 
-function ServerRequest(requestCode, resource, async){
-    let httpRequest = createHttpRequest(requestCode,resource,async);
+function ServerRequest(requestCode = null, resource = null, async = null, completeCallback = null){ //the = is a default value assigned if argument is not passed
+    let httpRequest = null;
     let requestCreated = false;
     let requestSent = false;
-    this.requestResponseCallback = null;
+    this.requestResponseCallback = completeCallback;
     let createHttpRequest = (requestType, resource, async) =>{
         httpReq = new XMLHttpRequest();
         httpReq.open(requestType, resource, async);
+        httpReq.onreadystatechange = this.requestResponseCallback;
         this.requestCreated = true;
         return httpReq;
     } 
+    httpRequest = createHttpRequest(requestCode,resource,async);
     this.sendHttpRequest = () => {
         if (requestSent === false && requestCreated === true){
             request = this.getHttpRequest();
@@ -51,11 +53,12 @@ function ServerRequest(requestCode, resource, async){
     this.getRequestCode = () => requestCode;
     this.isRequestCreated = () => requestCreated;
     this.isRequestSent = () => requestSent;
+    this.toString = () => requestCode;
 }
 function ServerConnection(server){
     this.connect = (httpReq, async, callback) => {
        console.log("Server connected to: " + server.getServerInfo().toString());
-       httpReq.open();
+       //httpReq.open();
        //Add callbacks asyc
         return this;
     };
