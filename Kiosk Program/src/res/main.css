@@ -7,9 +7,14 @@ div > input{
     padding: 10px;
     left: 25%;
 }
+#title{
+    position: relative;
+    left: 50%;
+}
 
 #main{
-    position: absolute;
+    position: relative;
     top: 35%;
     left: 25%;
 }
+
