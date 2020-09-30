@@ -2,9 +2,10 @@
 $username = "fname";
 $pwd = "fpwd";
 $email = "femail";
+$client_username = $_POST($username);
 session_start();
-if (isset($_POST($username))) {
-    $client_username = $_POST($username);
+if (isset($client_username) {
+    
     echo $client_username;
 }
 if (isset($_POST($pwd))) {
