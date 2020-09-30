@@ -67,28 +67,15 @@ function ServerRequest(requestCode = null, resource = null, async = null, comple
     this.getRequestCode = () => requestCode;
     this.isRequestCreated = () => requestCreated;
     this.isRequestSent = () => requestSent;
-    this.toString = () => requestCode;
 }
-
-/**
- * Constructor for a ServerConnection Object.
- * @param {*} server 
- */
 function ServerConnection(server){
     this.connect = (httpReq, async, callback) => {
        console.log("Server connected to: " + server.getServerInfo().toString());
-       //httpReq.open();
+       httpReq.open();
        //Add callbacks asyc
         return this;
     };
 }
-
-/**
- * Constructor for ServerInfo Object.
- * @param {*} ip 
- * @param {*} port 
- * @param {*} permissions 
- */
 function ServerInfo(ip,port,permissions){
     this.getIp = () => ip;
     this.getPort = () => port;
@@ -96,11 +83,20 @@ function ServerInfo(ip,port,permissions){
     this.toString = () => {return '\nIP adress: ' + this.getIp() + '\nPort number: ' + this.getPort() + '\nPermissions: ' + this.getPermissions() }
 }
 
-/**
- * Constructor for ServerTransaction Object.
- * @param {*} request 
- */
 function ServerTransaction(request){
     this.getRequest = () => request; //request code
-   
+    this.getRequestDescription = () => {
+        switch(this.getRequest().getRequestCode()){
+            case SERVER_REQUEST_GET:
+                return "GET";
+            case SERVER_REQUEST_POST:
+                return 'POST';
+            case SERVER_REQUEST_UPDATE:
+                return 'UPDATE';
+            case SERVER_REQUEST_DELETE:
+                return 'DELETE';
+            default:
+                return null;
+        }
+    }
 }
