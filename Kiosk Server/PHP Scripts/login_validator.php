@@ -1,7 +1,7 @@
 <?php
-const $username = "fname";
-const $pwd = "fpwd";
-const $email = "femail";
+$username = "fname";
+$pwd = "fpwd";
+$email = "femail";
 session_start();
 if (isset($_POST($username))) {
     $client_username = $_POST($username);
