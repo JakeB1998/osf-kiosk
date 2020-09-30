@@ -4,15 +4,16 @@
         <script src="./login-app.js"></script>
         <script src="../security/crypto.js"></script>
         
+        
     </head>
     <body>
 
         
-    <form action="welcome.php" method="post">
-    Name: <input type="text" name="name"><br>
-    Passworkd:  <input type="text" name="password"><br>
-    E-mail: <input type="text" name="email"><br>
-    <input type="submit">
+    <form action="../../../Kiosk Server/PHP Scripts/login_validator.php" method="post">
+    Name: <input type="text" name="fname"><br>
+    Passworkd:  <input type="text" name="fpwd"><br>
+    E-mail: <input type="text" name="femail"><br>
+    <input type="submit" onsubmit="validateLogin">
     </form>
     </body>
 </html>
