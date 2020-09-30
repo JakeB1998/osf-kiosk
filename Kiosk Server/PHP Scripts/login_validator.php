@@ -1,5 +1,5 @@
 <?php
-$username = "fname";
+$username = 'fname';
 $pwd = "fpwd";
 $email = "femail";
 session_start();
