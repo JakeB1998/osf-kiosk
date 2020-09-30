@@ -1,36 +1,52 @@
 //var http = require('http');
 //var fs = require('fs');
-const SERVER_REQUEST_GET = 1648;
-const SERVER_REQUEST_POST = 23849;
-const SERVER_REQUEST_UPDATE = 33532;
-const SERVER_REQUEST_DELETE = 43283;
-const PORT=8080; 
-const IP = '50.83.113.1';
+const SERVER_REQUEST_GET = "GET";
+const SERVER_REQUEST_POST = "POST";
+const SERVER_REQUEST_UPDATE = "UPDATE";
+const SERVER_REQUEST_DELETE = "DELETE";
+const PORT=8080;  //delete later
+const IP = '50.83.113.1'; // delete later
 
+/**
+ * Base server variable
+ */
 var server = new Server(new ServerInfo(IP,PORT,null));
 
 function createServerConncection(server, serverRequest){
     return new ServerConnection(server).connect(serverRequest);
 }
 
+/**
+ * Construcotr for Server Object.
+ * @param {*} serverInformation 
+ */
 function Server(serverInformation){
     let serverInfo = serverInformation;
     this.getServerInfo = () => serverInfo;
-    this.createServerRequest = (requestCode, params) => new ServerRequest(requestCode, params);
+    this.createServerRequest = (requestCode = null, resource = null, async = null, callback = null) => new ServerRequest(requestCode, resource,async,callback);
     this.sendServerRequest = (serverRequest) => serverRequest.getHttpRequest().send(); 
 }
 
-function ServerRequest(requestCode, resource, async){
-    let httpRequest = createHttpRequest(requestCode,resource,async);
+/**
+ * Constructor for ServerRequest Object.
+ * @param {*} requestCode 
+ * @param {*} resource 
+ * @param {*} async 
+ * @param {*} completeCallback 
+ */
+function ServerRequest(requestCode = null, resource = null, async = null, completeCallback = null){ //the = is a default value assigned if argument is not passed
+    let httpRequest = null;
     let requestCreated = false;
     let requestSent = false;
-    this.requestResponseCallback = null;
+    this.requestResponseCallback = completeCallback;
     let createHttpRequest = (requestType, resource, async) =>{
         httpReq = new XMLHttpRequest();
         httpReq.open(requestType, resource, async);
+        httpReq.onreadystatechange = this.requestResponseCallback;
         this.requestCreated = true;
         return httpReq;
     } 
+    httpRequest = createHttpRequest(requestCode,resource,async);
     this.sendHttpRequest = () => {
         if (requestSent === false && requestCreated === true){
             request = this.getHttpRequest();
