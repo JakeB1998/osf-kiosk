@@ -6,7 +6,8 @@
 window.addEventListener('load', (event) =>
 {
     initButtons();
-
+    pluginAppsOnLoad = pluginAppsLoadedCallback;
+    loadApps();
     require(['crypto-js'], function (CryptoJS) {
     console.log("window fully loaded");
     console.log(CryptoJS);
@@ -20,10 +21,6 @@ window.addEventListener('load', (event) =>
     let secureData = new SecureData(CryptoJS, 'jmbotka', "adom");
     console.log('decrypted data: ' + secureData.getData().toString()
                 + '\nHashed data: ' + secureData.getHashDigest());
-
-    let serverRequest = server.createServerRequest("GET","./index.html", true, callback);
-    server.sendServerRequest(serverRequest);
-    console.log(serverRequest.toString());
     return CryptoJS;
     });
 });
@@ -33,8 +30,31 @@ window.addEventListener('load', (event) =>
  */
   function callback(){
     if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
+        //console.log(this.responseText);
        }
+  }
+
+  /**
+   * Checks if client is logged into account.
+   */
+  function checkIfLoggedIn(){
+      // do a post with current logg in
+  }
+
+  /**
+   * Callback
+   * @param {*} apps Apps object
+   */
+  function pluginAppsLoadedCallback(apps) {
+    console.log('Apps loaded and ready: ' + apps);
+  }
+
+  /**
+   * Callback
+   * @param {*} appInfo AppInfo object
+   */
+  function pluginAppInfoLoaded(appInfo = null){
+      console.log(appInfo.toString());
   }
 
 

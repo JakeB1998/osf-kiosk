@@ -23,7 +23,7 @@ function createServerConncection(server, serverRequest){
 function Server(serverInformation){
     let serverInfo = serverInformation;
     this.getServerInfo = () => serverInfo;
-    this.createServerRequest = (requestCode = null, resource = null, async = null, callback = null) => new ServerRequest(requestCode, resource,async,callback);
+    this.createServerRequest = (requestCode = null, resource = null, async = null, callback = null, callbackParams = null, responseType = null)  => new ServerRequest(requestCode, resource,async,callback,callbackParams,responseType);
     this.sendServerRequest = (serverRequest) => serverRequest.getHttpRequest().send(); 
 }
 
@@ -34,13 +34,16 @@ function Server(serverInformation){
  * @param {*} async 
  * @param {*} completeCallback 
  */
-function ServerRequest(requestCode = null, resource = null, async = null, completeCallback = null){ //the = is a default value assigned if argument is not passed
+function ServerRequest(requestCode = null, resource = null, async = null,completeCallback = null, callbackParams = null, responseType){ //the = is a default value assigned if argument is not passed
     let httpRequest = null;
     let requestCreated = false;
     let requestSent = false;
     this.requestResponseCallback = completeCallback;
     let createHttpRequest = (requestType, resource, async) =>{
         httpReq = new XMLHttpRequest();
+        if (responseType != null && async === true){
+            httpReq.responseType = responseType;
+        }
         httpReq.open(requestType, resource, async);
         httpReq.onreadystatechange = this.requestResponseCallback;
         this.requestCreated = true;
