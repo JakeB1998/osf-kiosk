@@ -23,9 +23,7 @@ if (is_validated($client_username, $client_password)){
     $location = "../../Kiosk Program/src/main/index.html";
     $paramString = addParameters([['key'=> 'username', 'value'=> $client_username],
                                 ['key'=> 'password', 'value'=> $client_password]]);
-    if ($paramString != null){
-        $location += $paramString;
-    }
+    $location = $paramString != null ? $location + $paramString : $location;
     header("Location: " + $location);
     echo 'exited';
     exit();

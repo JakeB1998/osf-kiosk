@@ -7,6 +7,9 @@ window.addEventListener('load', (event) =>
 {
     let params = getURLParams();
     logParamaters(params);
+    let loginInfo = retrieveLogInInformation(params);
+    console.log(loginInfo);
+
     initButtons();
     pluginAppsOnLoad = pluginAppsLoadedCallback;
     loadApps();
@@ -28,13 +31,28 @@ window.addEventListener('load', (event) =>
 });
 
 function getURLParams(){
-    params = null;
-    console.log(document.URL.includes('?'));
-    if (hasParameters(document.URL)){
-        params = parseParameters(document.URL);
-        console.log(params);
+    return hasParameters(document.URL) === true ? parseParameters(document.URL) : null;
+}
+
+/**
+ * Retrieves login information
+ * @param {} params 
+ */
+function retrieveLogInInformation(params = null){
+    let username = null;
+    let password = null;
+    if (params !== null){
+        username = params.find((element) => element['key'] === 'username');
+        password = params.find((element) => element['key'] === 'password');
+        if (username !== undefined && password !== undefined){
+            username = username['value'];
+            password = password['value'];
+            return {username,password};
+        }
+        console.log(username + ',' + password);
     }
-    return params;
+
+    return null;
 }
 /**
  * Test callback for http request completed state change

@@ -31,12 +31,12 @@ function parseParameters(url = null){
                 if (url.includes('&')){
                     endIndex = url.indexOf('&');
                     value = url.substring(startIndex,endIndex);
-                    params.push({"id": id, "value": value});
+                    params.push({"key": id, "value": value});
                     url = url.substring(endIndex + 1);
                 }
                 else{
                     value = url.substring(startIndex);
-                    params.push({"id": id, "value": value});
+                    params.push({"key": id, "value": value});
                     break;
                 }
                 
