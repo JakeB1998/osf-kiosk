@@ -20,9 +20,33 @@ if (isset($client_email)) {
 
 
 if (is_validated($client_username, $client_password)){
-    header("Location: ../../Kiosk Program/src/main/index.html");
+    $location = "../../Kiosk Program/src/main/index.html";
+    $paramString = addParameters([['key'=> 'username', 'value'=> $client_username],
+                                ['key'=> 'password', 'value'=> $client_password]]);
+    if ($paramString != null){
+        $location += $paramString;
+    }
+    header("Location: " + $location);
     echo 'exited';
     exit();
+}
+
+function addParameters($params = null){
+    if ($params != null){
+        $str = "/?";
+        for ($i =0; $i < sizeof($params); $i++){
+            if ($i > 0){
+                $str += "&";
+            }
+            $key = $params[$i]['key'];
+            $value =  $params[$i]['value'];
+            $str += $key + '=' + $value;
+            echo $str;
+        }
+        return $str;
+    }
+
+    return null;
 }
 
 /**

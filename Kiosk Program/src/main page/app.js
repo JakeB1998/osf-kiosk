@@ -5,6 +5,8 @@
  */
 window.addEventListener('load', (event) =>
 {
+    let params = getURLParams();
+    logParamaters(params);
     initButtons();
     pluginAppsOnLoad = pluginAppsLoadedCallback;
     loadApps();
@@ -25,6 +27,15 @@ window.addEventListener('load', (event) =>
     });
 });
 
+function getURLParams(){
+    params = null;
+    console.log(document.URL.includes('?'));
+    if (hasParameters(document.URL)){
+        params = parseParameters(document.URL);
+        console.log(params);
+    }
+    return params;
+}
 /**
  * Test callback for http request completed state change
  */
