@@ -10,15 +10,16 @@
         
     </head>
     <body>
-
+        <iframe name="votar" style="display:none;"></iframe>
         <p>@authors Jake Botka, Greg Schwab, Hamza Lastname</p>
         <br>
         <p id="title">OSF Kiosk Program</p>
-        <form action="../../../Kiosk Server/PHP Scripts/login_validator.php" method="post">
+        <form action="../../../Kiosk Server/PHP Scripts/login_validator.php"  method="POST">
         Name: <input type="text" name="fname"><br>
         Passworkd:  <input type="text" name="fpwd"><br>
         E-mail: <input type="text" name="femail"><br>
-        <input type="submit" onsubmit="validateLogin">
-        </form>
+        <input type="submit" onsubmit="return false;">
+        
+        
     </body>
 </html>

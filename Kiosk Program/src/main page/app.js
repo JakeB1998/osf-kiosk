@@ -8,7 +8,7 @@ window.addEventListener('load', (event) =>
     let params = getURLParams();
     logParamaters(params);
     let loginInfo = retrieveLogInInformation(params);
-    console.log(loginInfo);
+    console.log('login info: ' + loginInfo);
 
     initButtons();
     pluginAppsOnLoad = pluginAppsLoadedCallback;

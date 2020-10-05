@@ -1,0 +1,6 @@
+{
+   "size" : 2,
+   "urls" : [
+         "./plugins/plugin-dir/app-1/info.json", "./plugins/plugin-dir/app-2/info/info.json"
+   ]
+}
