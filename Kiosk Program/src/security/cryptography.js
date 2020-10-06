@@ -48,7 +48,7 @@ function sha256(message, cryptojs){
     if (cryptojs !== undefined && cryptojs !== null){
         return cryptojs.SHA256(message);
     }
-    console.log("crypto js is null or undefined");
+    console.log("crypto js is null or undefined" + cryptojs);
     return null;
 }
 

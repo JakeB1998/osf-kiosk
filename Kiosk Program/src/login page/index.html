@@ -4,22 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../res/login-page.css">
+        <script data-main="../main page/main.js" src="../lib/requirejs.js"></script>
         <script src="./login-app.js"></script>
-        <script src="../security/crypto.js"></script>
+        <script src="../security/cryptography.js"></script>
         
         
     </head>
     <body>
-        <iframe name="votar" style="display:none;"></iframe>
-        <p>@authors Jake Botka, Greg Schwab, Hamza Lastname</p>
-        <br>
-        <p id="title">OSF Kiosk Program</p>
-        <form action="../../../Kiosk Server/PHP Scripts/login_validator.php"  method="POST">
-        Name: <input type="text" name="fname"><br>
-        Passworkd:  <input type="text" name="fpwd"><br>
-        E-mail: <input type="text" name="femail"><br>
-        <input type="submit" onsubmit="return false;">
-        
+        <div id= "main-login-div" class="center">
+            <iframe name="votar" style="display:none;"></iframe>
+            <p >@authors Jake Botka, Greg Schwab, Hamza Lastname</p>
+            <br>
+            <p class= "center" id="title">OSF Kiosk Program</p>
+            <form class = "center"  onsubmit="return validateLogin();" action="../../../Kiosk Server/PHP Scripts/login_validator.php"  method="POST">
+                <label>Username: </label>  <input class = "center" type="text" id = "fname" name="fname"><br>
+                <label>Password: </label>  <input  class = "center"  type="password" id= "fpwd" name="fpwd"><br>
+                <label> E-mail: </label>  <input class = "center"  type="text" id= "femail" name="femail"><br>
+                <input class = "center"  id= "fsubmit"type="submit" >
+            </form>
+        </div>
         
     </body>
 </html>

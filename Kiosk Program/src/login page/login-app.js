@@ -1,15 +1,33 @@
-let cryto_data = new Cryptography();
 
+var cryto_data = null;
+var cryptojs = null;
+/**
+ * Called when the window is fully loaded
+ */
+window.addEventListener('load', (event) =>
+{
+    require(['crypto-js'], function (CryptoJS) {
+        console.log("window fully loaded");
+        console.log(CryptoJS);
+        defaultCipherSettings = {
+            mode: CryptoJS.mode.CFB,
+            padding: CryptoJS.pad.AnsiX923
+        }
+        cryptojs = CryptoJS;
+    });
+});
 
 function validateLogin(){
     console.log("on click");
-   let req =  new XMLHttpRequest();
-   req.onreadystatechange = function(){
-       console.log(this.status);
-       console.log(this.responseText);
-   }
-   req.open("POST", "../../../Kiosk Server/PHP Scripts/login_validator.php");
-   req.send();
+   
+    let password = document.getElementById('fpwd');
+    let hashedPwd =  sha256(password.value, cryptojs);
+    console.log(hashedPwd);
+    password.value = hashedPwd;
+    if (hashedPwd !== null){
+        return true;
+    }
+    return false;
    
 }
 
