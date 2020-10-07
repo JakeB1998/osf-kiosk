@@ -5,6 +5,7 @@ $email = 'femail';
 $client_username = null;
 $client_password = null;
 $client_email = null;
+$client_authcode = null;
 session_start();
 ob_start();
 
@@ -22,14 +23,17 @@ if (isset($_POST[$email])) {
     echo 'email: ' . $client_email;
 }
 
+if(isset($_POST['fauthcode'])){
+    $client_authcode = $_POST['fauthcode'];
+}
+
 
 if (is_validated($client_username, $client_password)){
     echo 'validation started';
     $location = "../../Kiosk Program/src/main page/index.html";
     $paramString = null;
     if ($client_username != null && $client_password != null){
-        $paramString = addParameters([['key'=> 'username', 'value'=> $client_username],
-        ['key'=> 'password', 'value'=> $client_password]]);
+        $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode]]);
     }
     $location = $paramString != null ? $location . $paramString : $location;
     echo $location;

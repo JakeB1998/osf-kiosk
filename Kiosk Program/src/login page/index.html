@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../res/login-page.css">
         <script data-main="../main page/main.js" src="../lib/requirejs.js"></script>
         <script src="./login-app.js"></script>
+        <script src="../util/storage-util.js"></script>
         <script src="../security/cryptography.js"></script>
         
         
@@ -16,11 +17,12 @@
             <p >@authors Jake Botka, Greg Schwab, Hamza Lastname</p>
             <br>
             <p class= "center" id="title">OSF Kiosk Program</p>
-            <form class = "center"  onsubmit="return validateLogin();" action="../../../Kiosk Server/PHP Scripts/login_validator.php"  method="POST">
+            <form class = "center"  onsubmit="return validateLogin();" action="../../../Kiosk Server/PHP Scripts/login_validator.php"  target="window" method="POST">
                 <label>Username: </label>  <input class = "center" type="text" id = "fname" name="fname"><br>
                 <label>Password: </label>  <input  class = "center"  type="password" id= "fpwd" name="fpwd"><br>
                 <label> E-mail: </label>  <input class = "center"  type="text" id= "femail" name="femail"><br>
                 <input class = "center"  id= "fsubmit"type="submit" >
+                <input class="center" type="hidden" id="fauthcode" name="fauthcode">
             </form>
         </div>
         
