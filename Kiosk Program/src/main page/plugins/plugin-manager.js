@@ -1,4 +1,4 @@
-var dir_base = () => "./plugins/plugin-dir/directory-info.json";
+var dir_base = () => "/osf project/kiosk project/src/main page/plugins/plugin-dir/directory-info.json";
 var infoFileBase = () => "info.json";
 var pluginApps = null;
 var pluginAppsOnLoad = null;

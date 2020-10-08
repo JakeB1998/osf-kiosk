@@ -29,7 +29,7 @@ function validateLogin(){
     let authElement = document.getElementById('fauthcode');
     authElement.value = authocode;
     console.log(hashedPwd);
-    password.value = hashedPwd;
+    //password.value = hashedPwd;
     let key1 = 'loggedinuser-email'.concat(authocode);
     let key2 = 'loggedinuser-pwd'.concat(authocode);
     if (getFromLocalStorage(key1) === null){

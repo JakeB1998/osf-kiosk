@@ -5,7 +5,13 @@
  */
 window.addEventListener('load', (event) =>
 {
-    
+    let req = new XMLHttpRequest();
+    req.onreadystatechange = function(){console.log(this.status)};
+    req.setRequestHeader("Authorization", "Basic " + btoa('admin' + ":" + 'admin'));
+    req.open("GET", "/osf project/kiosk program/src/main page/res/index.html");
+
+    req.withCredentials = true;
+    req.send();
     let params = getURLParams();
     logParamaters(params);
     let auth = retrieveAuthcode(params);

@@ -6,6 +6,7 @@ $client_username = null;
 $client_password = null;
 $client_email = null;
 $client_authcode = null;
+chdir("../../");
 session_start();
 ob_start();
 
@@ -29,14 +30,22 @@ if(isset($_POST['fauthcode'])){
 
 
 if (is_validated($client_username, $client_password)){
-    $location = "../../kiosk program/src/main page/index.html";
+    $location = "../../kiosk program/src/main page/res/index.html";
     $paramString = null;
     if ($client_username != null && $client_password != null){
         $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode]]);
     }
+    $auth = base64_encode($client_username . ":" .  $client_password);
+    $context = stream_context_create([
+    "http" => [
+        "header" => "Authorization: Basic 
+        " . $auth
+    ]
+]);
+    
     $location = $paramString != null ? $location . $paramString : $location;
-    header("Location: " . $location);
-    //readfile('../../kiosk program/src/main page/index.html');  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
+    //header("Location: " . $client_username . ":". $client_password . "@" . $location);
+    readfile('kiosk program/src/main page/res/index.html', false, $context);  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
     exit();
 }
 
