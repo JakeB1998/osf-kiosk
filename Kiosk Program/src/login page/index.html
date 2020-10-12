@@ -18,9 +18,9 @@
             <br>
             <p class= "center" id="title">OSF Kiosk Program</p>
             <form class = "center"  onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
-                <label>Username: </label>  <input class = "center" type="text" id = "fname" name="fname"><br>
-                <label>Password: </label>  <input  class = "center"  type="password" id= "fpwd" name="fpwd"><br>
                 <label> E-mail: </label>  <input class = "center"  type="text" id= "femail" name="femail"><br>
+                <label>Password: </label>  <input  class = "center"  type="password" id= "fpwd" name="fpwd"><br>
+                
                 <input class = "center"  id= "fsubmit"type="submit" >
                 <input class="center" type="hidden" id="fauthcode" name="fauthcode">
             </form>

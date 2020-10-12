@@ -1,23 +1,22 @@
 
+var mainButtons = null;
 
 /**
  * Called when the window is fully loaded
  */
 window.addEventListener('load', (event) =>
 {
-    let req = new XMLHttpRequest();
-    req.onreadystatechange = function(){console.log(this.status)};
-    req.setRequestHeader("Authorization", "Basic " + btoa('admin' + ":" + 'admin'));
-    req.open("GET", "/osf project/kiosk program/src/main page/res/index.html");
-
-    req.withCredentials = true;
-    req.send();
+    initButtons();
     let params = getURLParams();
     logParamaters(params);
+    
     let auth = retrieveAuthcode(params);
     let loggedInUser = getLoggedInUser(auth);
+    let req = server.createServerRequest("GET", "/osf project/kiosk program/src/main page/res/index.html", true);
+    console.log(req.getHttpRequest());
+    server.applyCredentialsToRequest(req.getHttpRequest(), loggedInUser[0], loggedInUser[1]);
+    server.sendServerRequest(req);
     
-    initButtons();
     pluginAppsOnLoad = pluginAppsLoadedCallback;
     loadApps();
     require(['crypto-js'], function (CryptoJS) {
@@ -38,7 +37,12 @@ window.addEventListener('load', (event) =>
 });
 
 function getURLParams(){
-    return hasParameters(document.URL) === true ? parseParameters(document.URL) : null;
+    let element = document.getElementById('param-url');
+    let url = element !== null ? element.href : null;
+    if (element !== null){
+        element.remove();
+    }
+    return hasParameters(url) === true ? parseParameters(url) : null;
 }
 
 /**
@@ -101,7 +105,21 @@ function getLoggedInUser(authcode){
    * @param {*} appInfo AppInfo object
    */
   function pluginAppInfoLoaded(appInfo = null){
-      console.log(appInfo.toString());
+      console.log(appInfo.getApp().toString());
+    let appNum = appInfo.getApp().getAppNumber();
+    if (isSet(appNum)){
+        let index = parseInt(appNum - 1);
+        let button = mainPageButtons[index];
+        button.setAttribute('name', 'app-'.concat(appNum));
+        button.src = appInfo.getAppPictureUrl();
+        console.log(button);
+    }
+           
+      
+  }
+
+  function isSet(element){
+      return element !== undefined && element !== null;
   }
 
 

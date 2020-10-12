@@ -1,4 +1,4 @@
-var dir_base = () => "/osf project/kiosk project/src/main page/plugins/plugin-dir/directory-info.json";
+var dir_base = () => "/osf project/kiosk program/src/main page/plugins/plugin-dir/directory-info.json";
 var infoFileBase = () => "info.json";
 var pluginApps = null;
 var pluginAppsOnLoad = null;
@@ -18,8 +18,10 @@ function directoryInfoCallback(){
         let urls = json.urls;
         let size = json.size;
         let apps = new Apps(new Array(0), size);
+        for (i = 0; i < size; i++){
+            createButton();
+        }
         for (i = 0; i < urls.length; i++){
-           
             apps.addApp(new App(null,urls[i]));
         }
     }
@@ -41,6 +43,7 @@ function Apps(apps = null, size = 0){
             console.log(this.appsArray);
             if (this.appsArray.length < this.size){
                 this.appsArray.push(app);
+                app.appIndex = this.appsArray.length - 1;
                 if (this.isAllAppsLoaded()){
                     if (pluginAppsOnLoad !== null){
                         //pluginAppsOnLoad(apps);
@@ -62,12 +65,14 @@ function Apps(apps = null, size = 0){
     }
 }
 
-function App(mainFile = null, infoFile = null){
+function App(mainFile = null, infoFile = null, appindx = null){
+    this.appIndex = appindx;
     this.infoFile = infoFile;
     this.appInfo = new AppInfo(this, infoFile).extractAppInfoFromFile();
     this.mainFile = this.appInfo != null ? this.appInfo.getMainUrl() : null;
     this.setMainFile = (file) => this.mainFile = file;
-    this.toString = () => 'Main entry file: ' + mainFile + '\nInfo ' + this.appInfo
+    this.getAppNumber = () => parseInt(this.appIndex) + 1;
+    this.toString = () => 'Main entry file: ' + mainFile + '\nInfo ' + this.appInfo + '\nApp Number: ' + this.getAppNumber();
 }
 
 function AppInfo(app = null, infoResFile = null){
@@ -110,7 +115,11 @@ function AppInfo(app = null, infoResFile = null){
         callback();
     }
 
+    this.getApp = () => app;
+    this.getAppName = () => appName;
+    this.getAppVersion = () => appVersion;
     this.getMainUrl = () => mainURL;
+    this.getAppPictureUrl = () => appPictureURL;
     this.toString = () => {
         return 'App Name: ' + appName
                 + '\nApp Version:' + appVersion

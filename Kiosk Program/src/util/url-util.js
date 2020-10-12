@@ -51,7 +51,7 @@ function logParamaters(params = null){
     if (params !== null){
         for (i = 1; i <= params.length; i++){
             console.log('param ' + i 
-                    + '\nid: ' + params[i - 1]['id'] 
+                    + '\nid: ' + params[i - 1]['key'] 
                     + ' \nValue: ' + params[i - 1]['value'] );
         }
     }

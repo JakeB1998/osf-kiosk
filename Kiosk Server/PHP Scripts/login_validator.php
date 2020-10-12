@@ -28,23 +28,22 @@ if(isset($_POST['fauthcode'])){
     $client_authcode = $_POST['fauthcode'];
 }
 
-
-if (is_validated($client_username, $client_password)){
+$paramString = null;
+if (is_validated($client_email, $client_password)){
     $location = "../../kiosk program/src/main page/res/index.html";
-    $paramString = null;
-    if ($client_username != null && $client_password != null){
+    if ($client_email != null && $client_password != null){
         $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode]]);
     }
-    $auth = base64_encode($client_username . ":" .  $client_password);
+    $auth = base64_encode($client_email . ":" .  $client_password);
     $context = stream_context_create([
     "http" => [
         "header" => "Authorization: Basic 
         " . $auth
     ]
 ]);
-    
     $location = $paramString != null ? $location . $paramString : $location;
     //header("Location: " . $client_username . ":". $client_password . "@" . $location);
+    echo "<a id='param-url' href='$location'>Start</a>";
     readfile('kiosk program/src/main page/res/index.html', false, $context);  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
     exit();
 }
@@ -76,16 +75,16 @@ function is_validated($username = null, $password = null){
 /**
  * Checks to see if credentials are validated
  */
-function validate_cred($username_local = null, $password_local = null){
-    global $username;
+function validate_cred($email_local = null, $password_local = null){
+    global $email;
     global $pwd;
-    if ($username_local != null && $password_local != null){
+    if ($email_local != null && $password_local != null){
         return true;
     }
     else{
-        $username_local = isset($_REQUEST[$username]) ? $_REQUEST[$username] : null;
+        $email_local_local = isset($_REQUEST[$email]) ? $_REQUEST[$email] : null;
         $password_local = isset($_REQUEST[$pwd]) ? $_REQUEST[$pwd] : null;
-        if ($username_local != null && $password_local != null){
+        if ($email_local != null && $password_local != null){
             return true;
         }
     }
