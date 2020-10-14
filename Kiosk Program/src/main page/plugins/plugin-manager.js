@@ -2,11 +2,13 @@ var dir_base = () => "/osf project/kiosk program/src/main page/plugins/plugin-di
 var infoFileBase = () => "info.json";
 var pluginApps = null;
 var pluginAppsOnLoad = null;
+const defaulCred = ['admin', 'admin'];
 
 
 function loadApps(){
     let req = server.createServerRequest("GET", dir_base(),true, directoryInfoCallback, null, 'text');
     req.getHttpRequest().overrideMimeType("application/json"); 
+    server.applyCredentialsToRequest(req, defaulCred[0], defaulCred[1]);
     server.sendServerRequest(req);
 
     
@@ -102,7 +104,8 @@ function AppInfo(app = null, infoResFile = null){
         //add 
         console.log('Attemting to extract info from app file : ' + infoFile);
         req = server.createServerRequest("GET", infoFile, true, organizeAppInfo, null, "text");
-        req.getHttpRequest().overrideMimeType("application/json");  
+        req.getHttpRequest().overrideMimeType("application/json");
+        server.applyCredentialsToRequest(req, defaulCred[0], defaulCred[1]);  
         server.sendServerRequest(req);
         return this;
     }

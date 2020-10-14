@@ -108,6 +108,7 @@ function getLoggedInUser(authcode){
       console.log(appInfo.getApp().toString());
     let appNum = appInfo.getApp().getAppNumber();
     if (isSet(appNum)){
+        console.log(mainPageButtons);
         let index = parseInt(appNum - 1);
         let button = mainPageButtons[index];
         button.setAttribute('name', 'app-'.concat(appNum));

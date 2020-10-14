@@ -1,4 +1,9 @@
 <?php
+
+
+require 'database-utils.php';
+require dirname(__FILE__).'/../php classes/statement.php';
+
 $username = 'fname';
 $pwd = 'fpwd';
 $email = 'femail';
@@ -9,6 +14,7 @@ $client_authcode = null;
 chdir("../../");
 session_start();
 ob_start();
+
 
 if (isset($_POST[$username])) {
     $client_username = $_POST[$username];
@@ -72,6 +78,7 @@ function is_validated($username = null, $password = null){
     return validate_cred($username, $password);
 }
 
+//SELECT * FROM member WHERE email=value.
 /**
  * Checks to see if credentials are validated
  */
@@ -79,16 +86,39 @@ function validate_cred($email_local = null, $password_local = null){
     global $email;
     global $pwd;
     if ($email_local != null && $password_local != null){
-        return true;
+        
     }
     else{
         $email_local_local = isset($_REQUEST[$email]) ? $_REQUEST[$email] : null;
         $password_local = isset($_REQUEST[$pwd]) ? $_REQUEST[$pwd] : null;
-        if ($email_local != null && $password_local != null){
+        
+    }
+
+    if ($email_local != null && $password_local != null){
+           
+        $conn =   open_db_connection('localhost', ['admin-e','admin-p'], 'db');
+        $statement = new Statement();
+        $statement->drop()->table("member");
+        $result = query_db($conn, );
+      
+        if ($result != null)
+        {
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+                }
+            } else {
+                echo "0 results";
+            }
             return true;
         }
+        echo 'Authentificaiton failed not a valid user';
+        return true;
     }
 
     return false;
 }
+
+
 ?>

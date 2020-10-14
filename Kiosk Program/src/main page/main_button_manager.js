@@ -34,7 +34,7 @@ function createButton(index = -1){
     if (!creating){
         creating = true;
        
-       parent.appendChild(buttonTemplate);
+       parent.appendChild(button);
         refresh();
         console.log('button created');
         creating = false;
