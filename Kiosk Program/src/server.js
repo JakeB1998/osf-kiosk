@@ -24,6 +24,7 @@ function Server(serverInformation){
     let serverInfo = serverInformation;
     this.getServerInfo = () => serverInfo;
     this.createServerRequest = (requestCode = null, resource = null, async = null, callback = null, callbackParams = null, responseType = null)  => new ServerRequest(requestCode, resource,async,callback,callbackParams,responseType);
+<<<<<<< HEAD
     this.applyCredentialsToRequest = (request = null, email = null, password = null) => {
         if (request !== null && email !== null && password !== null){
             request.setRequestHeader("Authorization", "Basic " + btoa(email + ":" + password));
@@ -31,6 +32,8 @@ function Server(serverInformation){
         }
         return request;
     }
+=======
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
     this.sendServerRequest = (serverRequest) => serverRequest.getHttpRequest().send(); 
 }
 

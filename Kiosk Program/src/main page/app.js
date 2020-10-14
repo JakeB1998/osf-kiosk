@@ -1,11 +1,15 @@
 
+<<<<<<< HEAD
 var mainButtons = null;
+=======
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
 
 /**
  * Called when the window is fully loaded
  */
 window.addEventListener('load', (event) =>
 {
+<<<<<<< HEAD
     initButtons();
     let params = getURLParams();
     logParamaters(params);
@@ -17,6 +21,14 @@ window.addEventListener('load', (event) =>
     server.applyCredentialsToRequest(req.getHttpRequest(), loggedInUser[0], loggedInUser[1]);
     server.sendServerRequest(req);
     
+=======
+    let params = getURLParams();
+    logParamaters(params);
+    let loginInfo = retrieveLogInInformation(params);
+    console.log(loginInfo);
+
+    initButtons();
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
     pluginAppsOnLoad = pluginAppsLoadedCallback;
     loadApps();
     require(['crypto-js'], function (CryptoJS) {
@@ -26,6 +38,7 @@ window.addEventListener('load', (event) =>
         mode: CryptoJS.mode.CFB,
         padding: CryptoJS.pad.AnsiX923
     }
+<<<<<<< HEAD
    
     /*
     let secureData = new SecureData(CryptoJS, 'jmbotka', "adom");
@@ -33,22 +46,36 @@ window.addEventListener('load', (event) =>
                 + '\nHashed data: ' + secureData.getHashDigest());
                 */
         return CryptoJS;
+=======
+    var q = new Cryptography(CryptoJS);
+    q.test("I like apples", "dhfubfskjdbkbk");
+    
+    let secureData = new SecureData(CryptoJS, 'jmbotka', "adom");
+    console.log('decrypted data: ' + secureData.getData().toString()
+                + '\nHashed data: ' + secureData.getHashDigest());
+    return CryptoJS;
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
     });
 });
 
 function getURLParams(){
+<<<<<<< HEAD
     let element = document.getElementById('param-url');
     let url = element !== null ? element.href : null;
     if (element !== null){
         element.remove();
     }
     return hasParameters(url) === true ? parseParameters(url) : null;
+=======
+    return hasParameters(document.URL) === true ? parseParameters(document.URL) : null;
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
 }
 
 /**
  * Retrieves login information
  * @param {} params 
  */
+<<<<<<< HEAD
 function retrieveAuthcode(params = null){
     
     if (params !== null){
@@ -57,10 +84,25 @@ function retrieveAuthcode(params = null){
             authcode = authcode['value'];
             return authcode;
         }
+=======
+function retrieveLogInInformation(params = null){
+    let username = null;
+    let password = null;
+    if (params !== null){
+        username = params.find((element) => element['key'] === 'username');
+        password = params.find((element) => element['key'] === 'password');
+        if (username !== undefined && password !== undefined){
+            username = username['value'];
+            password = password['value'];
+            return {username,password};
+        }
+        console.log(username + ',' + password);
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
     }
 
     return null;
 }
+<<<<<<< HEAD
 
 /**
  * 
@@ -76,6 +118,8 @@ function getLoggedInUser(authcode){
     return null;
 }
 
+=======
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
 /**
  * Test callback for http request completed state change
  */
@@ -105,6 +149,7 @@ function getLoggedInUser(authcode){
    * @param {*} appInfo AppInfo object
    */
   function pluginAppInfoLoaded(appInfo = null){
+<<<<<<< HEAD
       console.log(appInfo.getApp().toString());
     let appNum = appInfo.getApp().getAppNumber();
     if (isSet(appNum)){
@@ -121,6 +166,9 @@ function getLoggedInUser(authcode){
 
   function isSet(element){
       return element !== undefined && element !== null;
+=======
+      console.log(appInfo.toString());
+>>>>>>> 837c8ee7575852c4adefb560661555701903b280
   }
 
 
