@@ -4,6 +4,19 @@ $pwd = 'fpwd';
 $email = 'femail';
 $client_username = $_POST[$username];
 session_start();
+<<<<<<< HEAD
+if (isset($client_username)) {
+    
+    echo $client_username;
+}
+$client_password = $_POST[$pwd];
+if (isset($client_password)) {
+    echo $client_password;
+}
+$client_email = $_POST[$email];
+if (isset($client_email)) {
+    echo $client_email;
+=======
 
 if (isset($client_username)) {
     
@@ -63,5 +76,9 @@ function validate_cred($username = null, $password = null){
     }
 
     return false;
+>>>>>>> 06f3faddeb73fd955d46a671a8de30d02ba71225
 }
+
+header("Location: ../../Kiosk Program/src/main/index.html");
+die();
 ?>
