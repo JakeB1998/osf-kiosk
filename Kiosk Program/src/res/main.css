@@ -9,7 +9,7 @@ div > input{
 }
 #title{
     position: relative;
-    left: 50%;
+    text-align: center;
 }
 
 #main{
