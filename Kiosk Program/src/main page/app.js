@@ -1,4 +1,4 @@
-
+hideHTMLDoc();
 var mainButtons = null;
 
 /**
@@ -115,6 +115,12 @@ function getLoggedInUser(authcode){
         button.src = appInfo.getAppPictureUrl();
         console.log(button);
     }
+
+    if (isSet(apps)){
+        if (apps.isAllAppsLoaded()){
+            showHTMLDoc();
+        }
+    }
            
       
   }
@@ -124,4 +130,10 @@ function getLoggedInUser(authcode){
   }
 
 
+  function hideHTMLDoc(){
+    document.getElementsByTagName("html")[0].style.visibility = "hidden";
+  }
+  function showHTMLDoc(){
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
+  }
 

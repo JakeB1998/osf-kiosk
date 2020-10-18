@@ -33,7 +33,9 @@ if (isset($_POST[$email])) {
 
 if(isset($_POST['fauthcode'])){
     $client_authcode = $_POST['fauthcode'];
+   
 }
+
 
 
 
@@ -41,7 +43,8 @@ $paramString = null;
 if (is_validated($client_email, $client_password)){
     $location = "../../kiosk program/src/main page/res/index.html";
     if ($client_email != null && $client_password != null){
-        $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode]]);
+        $appInfo = get_application_info();
+        $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode], ['key'=> 'app-version', 'value'=> strval($appInfo[0])]]);
     }
     $auth = base64_encode($client_email . ":" .  $client_password);
     $context = stream_context_create([
@@ -92,36 +95,58 @@ function validate_cred($email_local = null, $password_local = null){
         
     }
     else{
-        $email_local_local = isset($_REQUEST[$email]) ? $_REQUEST[$email] : null;
+        $email_local = isset($_REQUEST[$email]) ? $_REQUEST[$email] : null;
         $password_local = isset($_REQUEST[$pwd]) ? $_REQUEST[$pwd] : null;
         
     }
 
     if ($email_local != null && $password_local != null){
            
-        $conn =   open_db_connection('localhost', ['admin-e','admin-p'], 'db');
+        $conn =   open_db_connection('localhost', ['new_user','Redbirdp1'], 'login');
+        if ($conn ->connect_errno){
+            echo('connection failed: ' . $conn->connect_error);
+        }
         $statement = new Statement();
-        $statement->drop()->table("member");
-        $result = query_db($conn, );
+       // $statement->select(["*"])->from()->table("members")->where("username")->equals($email_local);
+       $statement->select(["*"])->from()->table("members");
+        //echo $statement->get_statement();
+        $result = query_db($conn, $statement);
       
         if ($result != null)
         {
             if ($result->num_rows > 0) {
                 // output data of each row
-                while($row = $result->fetch_assoc()) {
-                echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+                while($row = $result->fetch_row()) {
+                echo  "<br>". $row;
                 }
             } else {
                 echo "0 results";
             }
             return true;
         }
-        echo 'Authentificaiton failed not a valid user';
+        echo '<br>Authentificaiton failed not a valid user';
         return true;
     }
 
     return false;
 
+}
+
+function get_application_info(){
+    $file = fopen('/osf project/kiosk program/src/main page/res/app-info.json', 'r');
+    if (isset($file)){
+        $jsonObj = json_decode($file);
+        $results = [];
+        if (isset($jsonObj)){
+            $version = $jsonObj["version"];
+            echo "<br>" . "version: " . $version;
+            array_push($results, strval($version));
+            
+        }
+
+        return $results;
+    }
+    return null;
 }
 
 

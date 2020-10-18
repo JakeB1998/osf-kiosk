@@ -8,6 +8,13 @@ function Cryptography(cryptojs)
     let cipherSetting = new CipherSettings(defaultCipherSettings);
     this.cryptojs = cryptojs;
     this.algorithm = "AES";
+    this.generateKey = (password = null) =>{
+        let salt = this.cryptojs.lib.WordArray.random(128/8);
+        let key = this.cryptojs.PBKDF2(password, salt,{
+            KeySize: 256 / 32
+        });
+        return key;
+    }
     this.encrypt = (data, key) => {
         if (data !== undefined && key !== undefined){
             var d = data;

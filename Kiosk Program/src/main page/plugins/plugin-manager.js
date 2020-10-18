@@ -3,13 +3,14 @@ var dir_base = () => "/osf project/kiosk program/src/main page/plugins/plugin-di
 var infoFileBase = () => "info.json";
 var pluginApps = null;
 var pluginAppsOnLoad = null;
+var apps = null;
 const defaulCred = ['admin', 'admin'];
 
 
 function loadApps(){
     let req = server.createServerRequest("GET", dir_base(),true, directoryInfoCallback, null, 'text');
-    req.getHttpRequest().overrideMimeType("application/json"); 
-    server.applyCredentialsToRequest(req, defaulCred[0], defaulCred[1]);
+    server.applyJsonOverride(req);
+    server.applyCredentialsToRequest(req.getHttpRequest(), defaulCred[0], defaulCred[1]);
     server.sendServerRequest(req);
 
     
@@ -20,10 +21,8 @@ function directoryInfoCallback(){
         let json =  JSON.parse(this.responseText);
         let urls = json.urls;
         let size = json.size;
-        let apps = new Apps(new Array(0), size);
-        for (i = 0; i < size; i++){
-            createButton();
-        }
+        createButtons(size);
+        apps = new Apps(new Array(0), size);
         for (i = 0; i < urls.length; i++){
             apps.addApp(new App(null,urls[i]));
 
@@ -107,7 +106,7 @@ function AppInfo(app = null, infoResFile = null){
         console.log('Attemting to extract info from app file : ' + infoFile);
         req = server.createServerRequest("GET", infoFile, true, organizeAppInfo, null, "text");
         req.getHttpRequest().overrideMimeType("application/json");
-        server.applyCredentialsToRequest(req, defaulCred[0], defaulCred[1]);  
+        server.applyCredentialsToRequest(req.getHttpRequest(), defaulCred[0], defaulCred[1]);  
         server.sendServerRequest(req);
         return this;
     }

@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Please Sign In</title>
-  <link rel="stylesheet" type="text/css" title="login stylesheet" href="login.css"></link>
-  <script type="text/javascript" src = "movie.js"></script>
+  <link rel="stylesheet" type="text/css" title="login stylesheet" href="../res/login.css"></link>
+  <script data-main="/osf project/kiosk program/src/main.js" src="/osf project/kiosk program/src/lib/requirejs.js"></script>
+  <script src="/osf project/kiosk program/src/login page/login-app.js"></script>
+  <script src="/osf project/kiosk program/src/security/cryptography.js"></script>
+  
+  
 </head>
 <body id="OSF Icon">
-  <form method="get" action="help.html" id="loginForm">
+  <form onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
     <fieldset>
     <legend>Login</legend><br>
-    <img src="images/OSF.jpg" alt="OSF Icon"><br>
+    <img src="../res/images/OSF.jpg" alt="OSF Icon"><br>
     <label for="fname">Email for Log in:</label><br>
-    <input type="email" id="fname" name="fname" class="hilightable"><br>
-    <label for="lname">Password:</label><br>
-    <input type="password" id="lname" name="lname" class="hilightable">
+    <input type="text" id="femail" name="femail" class="hilightable"><br>
+    <label for="fpwd">Password:</label><br>
+    <input type="password" encrypt = "sha256" id="fpwd" name="fpwd" class="hilightable">
+    <input  type="hidden" id="fauthcode" name="fauthcode">
     <p>
     <button class="button">Log In</button>
     <button type="reset" id="reset" name="button">Clear</button>
