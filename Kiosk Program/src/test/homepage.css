@@ -100,8 +100,8 @@ input {
    top: 35%;
    left: 36%;
   text-align: center;
-  width 40px;
-  height 40px;
+  width :40px;
+  height :40px;
   background-color: transparent;
 }
 
@@ -117,8 +117,8 @@ background-size: cover;
     top: 10%;
     left: 50%;
     text-align: center;
-    width 40px;
-    height 40px;
+    width :40px;
+    height :40px;
     background-color: transparent;
 }
 /*#faces {
