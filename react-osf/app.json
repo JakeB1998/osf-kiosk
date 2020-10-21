@@ -1,0 +1,12 @@
+{
+  "name": "react-osf",
+  "displayName": "react-osf",
+  "expo": {
+    "name": "react-osf",
+    "slug": "react-osf",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
