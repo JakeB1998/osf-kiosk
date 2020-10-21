@@ -3,61 +3,76 @@
 
 require 'database-utils.php';
 require dirname(__FILE__).'/../php classes/statement.php';
-
-$username = 'fname';
-$pwd = 'fpwd';
-$email = 'femail';
-$client_username = null;
-$client_password = null;
-$client_email = null;
-$client_authcode = null;
+$loginPagePath = "../../kiosk program/src/login page/login.html";
 chdir("../../");
 session_start();
-
 ob_start();
-
-
-if (isset($_POST[$username])) {
-    $client_username = $_POST[$username];
-    //echo 'username: ' . $client_username;
-}
-if (isset($_POST[$pwd])) {
-    $client_password = $_POST[$pwd];
-   // echo 'password: ' .$client_password;
-}
-
-if (isset($_POST[$email])) {
-    $client_email = $_POST[$email];
-    //echo 'email: ' . $client_email;
-}
-
-if(isset($_POST['fauthcode'])){
-    $client_authcode = $_POST['fauthcode'];
-   
-}
-
-
-
-
-$paramString = null;
-if (is_validated($client_email, $client_password)){
-    $location = "../../kiosk program/src/main page/res/index.html";
-    if ($client_email != null && $client_password != null){
-        $appInfo = get_application_info();
-        $paramString = addParameters([['key'=> 'authcode', 'value'=> $client_authcode], ['key'=> 'app-version', 'value'=> strval($appInfo[0])]]);
+echo 'refereer : ' . $_SERVER['HTTP_REFERER'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // The request is using the POST method
+    
+    $username = 'fname';
+    $pwd = 'fpwd';
+    $email = 'femail';
+    $client_username = null;
+    $client_password = null;
+    $client_email = null;
+    $client_authcode = null;
+    
+    if (isset($_POST[$username])) {
+        $client_username = $_POST[$username];
+        //echo 'username: ' . $client_username;
     }
-    $auth = base64_encode($client_email . ":" .  $client_password);
-    $context = stream_context_create([
-    "http" => [
-        "header" => "Authorization: Basic 
-        " . $auth
-    ]
-]);
-    $location = $paramString != null ? $location . $paramString : $location;
-    //header("Location: " . $client_username . ":". $client_password . "@" . $location);
-    echo "<a id='param-url' href='$location'>Start</a>";
-    readfile('kiosk program/src/main page/res/index.html', false, $context);  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
-    exit();
+    if (isset($_POST[$pwd])) {
+        $client_password = $_POST[$pwd];
+    // echo 'password: ' .$client_password;
+    }
+
+    if (isset($_POST[$email])) {
+        $client_email = $_POST[$email];
+        //echo 'email: ' . $client_email;
+    }
+
+    if(isset($_POST['fauthcode'])){
+        $client_authcode = $_POST['fauthcode'];
+    }
+
+
+    $paramString = null;
+    if (is_validated($client_email, $client_password)){
+        $location = "../../kiosk program/src/main page/res/index.html";
+        if ($client_email != null && $client_password != null){
+            $appInfo = get_application_info();
+            $params = [];
+            array_push($params,['key'=> 'authcode', 'value'=> $client_authcode]);
+            if ($appInfo != null){
+                if (sizeof($appInfo) > 0){
+                    array_push($params,['key'=> 'app-version', 'value'=> strval($appInfo[0])]);
+                }
+            }
+            $paramString = addParameters($params);
+        }
+        $auth = base64_encode($client_email . ":" .  $client_password);
+        $context = stream_context_create([
+        "http" => [
+            "header" => "Authorization: Basic 
+            " . $auth
+        ]
+        ]);
+        $location = $paramString != null ? $location . $paramString : $location;
+        //header("Location: " . $client_username . ":". $client_password . "@" . $location);
+        echo "<a id='param-url' href='$location'>Start</a>";
+        readfile('kiosk program/src/main page/res/index.html', false, $context);  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
+        
+        exit();
+    }
+    else{
+        echo "UNATHORIZED USER!!! YOU SHAL NOW DIE!";
+    }
+}
+else{
+    echo $_SERVER['REQUEST_METHOD'];
+    //header("Location: " . $loginPagePath);
 }
 
 function addParameters($params = null){

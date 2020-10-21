@@ -1,5 +1,11 @@
 hideHTMLDoc();
+window.history.replaceState( null, null, window.location.href );
+var docVisibilityPromise =  new Promise(function(r,c){
+    setTimeout(r,2000);
+}).then(() => showHTMLDoc());
 var mainButtons = null;
+var loggedInUser = null;
+var auth = null;
 
 /**
  * Called when the window is fully loaded
@@ -10,8 +16,8 @@ window.addEventListener('load', (event) =>
     let params = getURLParams();
     logParamaters(params);
     
-    let auth = retrieveAuthcode(params);
-    let loggedInUser = getLoggedInUser(auth);
+    auth = retrieveAuthcode(params);
+     loggedInUser = getLoggedInUser(auth);
     let req = server.createServerRequest("GET", "/osf project/kiosk program/src/main page/res/index.html", true);
     console.log(req.getHttpRequest());
     server.applyCredentialsToRequest(req.getHttpRequest(), loggedInUser[0], loggedInUser[1]);
@@ -113,6 +119,38 @@ function getLoggedInUser(authcode){
         let button = mainPageButtons[index];
         button.setAttribute('name', 'app-'.concat(appNum));
         button.src = appInfo.getAppPictureUrl();
+        button.onclick = function(event){
+            console.log(event);
+            let element = event.srcElement;
+            let name = element.name;
+            let cName = parseInt(name.substring(name.indexOf("-") + 1));
+            let buttonAppInfo = null;
+            if (cName <= apps.size){
+                let app = apps.getApp(cName - 1);
+                let filePath = app.mainFile;
+                console.log(filePath);
+                if (filePath !== null){
+                    /*
+                    let req = server.createServerRequest("POST", "/osf project/kiosk server/php scripts/open-app-request.php", true,function(){
+                            //
+                        }
+                    );
+                    let data = new FormData();
+                    data.append('furlpath', filePath);
+                    req.getHttpRequest().send(data);
+                    console.log("posted to : " + "/osf project/kiosk server/php scripts/open-app-request" );
+                    */
+                   document.getElementById('form-input').value = [filePath, loggedInUser[0], loggedInUser[1]];
+                   document.getElementById('app-request-form').submit();
+                    
+                }
+                else{
+                    
+                }
+            }
+
+            return this;
+        };
         console.log(button);
     }
 
