@@ -7,6 +7,7 @@ var mainButtons = null;
 var loggedInUser = null;
 var auth = null;
 
+
 /**
  * Called when the window is fully loaded
  */
@@ -16,6 +17,7 @@ window.addEventListener('load', (event) =>
     let params = getURLParams();
     logParamaters(params);
     
+
     auth = retrieveAuthcode(params);
      loggedInUser = getLoggedInUser(auth);
     let req = server.createServerRequest("GET", "/osf project/kiosk program/src/main page/res/index.html", true);

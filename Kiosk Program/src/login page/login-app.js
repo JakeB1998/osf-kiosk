@@ -1,4 +1,6 @@
 
+
+
 window.history.replaceState( null, null, window.location.href );
 
 
@@ -16,6 +18,7 @@ window.addEventListener('load', (event) =>
  * Validates form data for posting to a login validation external php script.
  */
 function validateLogin(){
+
         crytoObject = new Cryptography(Cryptojs);
         let auth = document.getElementById('fauthcode');
         auth.value = Cryptojs.lib.WordArray.random(128/8);
@@ -43,6 +46,7 @@ function validateLogin(){
     */
         return true;
    
+
 }
 
 

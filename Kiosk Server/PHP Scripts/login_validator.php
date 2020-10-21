@@ -73,6 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 else{
     echo $_SERVER['REQUEST_METHOD'];
     //header("Location: " . $loginPagePath);
+
 }
 
 function addParameters($params = null){
@@ -145,6 +146,7 @@ function validate_cred($email_local = null, $password_local = null){
 
     return false;
 
+
 }
 
 function get_application_info(){
@@ -163,6 +165,7 @@ function get_application_info(){
     }
     return null;
 }
+
 
 
 ?>

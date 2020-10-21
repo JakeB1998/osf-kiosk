@@ -6,20 +6,24 @@
   <title>Please Sign In</title>
   <link rel="stylesheet" type="text/css" title="login stylesheet" href="../res/login.css"></link>
   <script data-main="/osf project/kiosk program/src/main.js" src="/osf project/kiosk program/src/lib/requirejs.js"></script>
+
   <script src="/osf project/kiosk program/src/security/cryptography.js"></script>
   <script src="/osf project/kiosk program/src/login page/login-app.js"></script>
+
 
   
   
 </head>
 <body id="OSF Icon">
   <form id = "form-secure" onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
+
     <fieldset>
     <legend>Login</legend><br>
     <img src="../res/images/OSF.jpg" alt="OSF Icon"><br>
     <label for="fname">Email for Log in:</label><br>
     <input type="text" id="femail" name="femail" class="hilightable"><br>
     <label for="fpwd">Password:</label><br>
+
     <input type="password"  id="fpwd" name="fpwd" class="hilightable">
     <input  type="hidden" id="fauthcode" name="fauthcode">
     <p>
