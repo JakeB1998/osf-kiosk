@@ -15,45 +15,47 @@
   
 </head>
 <body id="OSF Icon">
-  <form id = "form-secure" onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
+  <div id="app-body">
+    <form id = "form-secure" onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
 
-    <fieldset>
-    <legend>Login</legend><br>
-    <img src="../res/images/OSF.jpg" alt="OSF Icon"><br>
-    <label for="fname">Email for Log in:</label><br>
-    <input type="text" id="femail" name="femail" class="hilightable"><br>
-    <label for="fpwd">Password:</label><br>
+      <fieldset>
+      <legend>Login</legend><br>
+      <img src="../res/images/OSF.jpg" alt="OSF Icon"><br>
+      <label for="fname">Email for Log in:</label><br>
+      <input type="text" id="femail" name="femail" class="hilightable"><br>
+      <label for="fpwd">Password:</label><br>
 
-    <input type="password"  id="fpwd" name="fpwd" class="hilightable">
-    <input  type="hidden" id="fauthcode" name="fauthcode">
-    <p>
-    <button class="button">Log In</button>
-    <button type="reset" id="reset" name="button">Clear</button>
-    </p>
-  </form>
-    <section>
-      <h3>Or Log in with your social media account:</h3>
-      <a href="https://www.facebook.com/">
-      <img src="images/facebook.png"
-      alt="facebook" width="30" height="30"/></a>
+      <input type="password"  id="fpwd" name="fpwd" class="hilightable">
+      <input  type="hidden" id="fauthcode" name="fauthcode">
+      <p>
+      <button class="button">Log In</button>
+      <button type="reset" id="reset" name="button">Clear</button>
+      </p>
+    </form>
+      <section>
+        <h3>Or Log in with your social media account:</h3>
+        <a href="https://www.facebook.com/">
+        <img src="images/facebook.png"
+        alt="facebook" width="30" height="30"/></a>
 
-      <a href="https://www.instagram.com/">
-      <img src="images/instagram.png"
-      alt="instagram" width="30" height="30"/></a>
+        <a href="https://www.instagram.com/">
+        <img src="images/instagram.png"
+        alt="instagram" width="30" height="30"/></a>
 
-      <a href="https://www.twitter.com/">
-      <img src="images/twitter.png"
-      alt="twitter" width="30" height="30"/></a>
-    </section>
-    </fieldset>
-<footer>
-  <hr>
-  <small>Nick Luedtke, Greg Schwab, Humza Moin, Jake Botka  Copyright &copy; 2020 - IT 391</small>
-  <small>
-    <script>
-      document.write("Last Modified: "+ document.lastModified);
-    </script>
-  </small>
-</footer>
+        <a href="https://www.twitter.com/">
+        <img src="images/twitter.png"
+        alt="twitter" width="30" height="30"/></a>
+      </section>
+      </fieldset>
+  <footer>
+    <hr>
+    <small>Nick Luedtke, Greg Schwab, Humza Moin, Jake Botka  Copyright &copy; 2020 - IT 391</small>
+    <small>
+      <script>
+        document.write("Last Modified: "+ document.lastModified);
+      </script>
+    </small>
+  </footer>
+</div>
 </body>
 </html>

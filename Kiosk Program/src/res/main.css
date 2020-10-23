@@ -7,6 +7,10 @@ div > input{
     padding: 10px;
     left: 25%;
 }
+#app-body{
+	width: 100vw;
+	height: 90vh;
+}
 #title{
     position: relative;
     text-align: center;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../res/login-page.css">
+        <script data-main="../main.js" src="../lib/requirejs.js"></script>
+        <script src="/osf project/kiosk program/src/login page/login-app.js"></script>
+        <script src="../util/storage-util.js"></script>
+        <script src="../security/cryptography.js"></script>
+        
+        
+    </head>
+    <body>
+        <div id= "main-login-div" class="center">
+            <iframe name="votar" style="display:none;"></iframe>
+            <p >@authors Jake Botka, Greg Schwab, Hamza Lastname</p>
+            <br>
+            <p class= "center" id="title">OSF Kiosk Program</p>
+            <form class = "center"  onsubmit="return validateLogin();" action="../../../kiosk server/php scripts/login_validator.php"  target="window" method="POST">
+                <label> E-mail: </label>  <input class = "center"  type="text" id= "femail" name="femail"><br>
+                <label>Password: </label>  <input  class = "center"  type="password" id= "fpwd" name="fpwd"><br>
+                
+                <input class = "center"  id= "fsubmit"type="submit" >
+                <input class="center" type="hidden" id="fauthcode" name="fauthcode">
+            </form>
+        </div>
+        
+    </body>
+</html>
