@@ -8,7 +8,7 @@ function create_statement($query = null){
 }
 
 function open_db_connection($ip = null, $dbCred = null, $nickName = null){
-    echo 'opening connectiong';
+    //echo 'opening connectiong';
     if ($ip != null && $dbCred != null && $nickName != null){
         return new mysqli($ip,$dbCred[0], $dbCred[1], $nickName);
     }

@@ -5,6 +5,13 @@ var pluginApps = null;
 var pluginAppsOnLoad = null;
 var apps = null;
 const defaulCred = ['admin', 'admin'];
+const JSONKeys = {
+    "additionalParams": "AdditionalParams",
+    "priority" : "Priority",
+    "size": "Size",
+    "catagoryTypes" : "CatagoryTypes",
+    "catagoryTypeKeys" : "CatagoryTypeKeys"
+};
 
 
 function loadApps(){
@@ -21,7 +28,7 @@ function directoryInfoCallback(){
         let json =  JSON.parse(this.responseText);
         let urls = json.urls;
         let size = json.size;
-        createButtons(size);
+        createButtons(allApplicationButtons,size);
         apps = new Apps(new Array(0), size);
         for (i = 0; i < urls.length; i++){
             apps.addApp(new App(null,urls[i]));
@@ -30,7 +37,9 @@ function directoryInfoCallback(){
     }
 }
 
-
+function isAllAppsLoaded(){
+    return apps !== null ? apps.isAllAppsLoaded() : false;
+}
 function Apps(apps = null, size = 0){
     this.appsArray = apps;
     this.size = size; // this is so i know when all async request are finished.
@@ -48,6 +57,9 @@ function Apps(apps = null, size = 0){
                 this.appsArray.push(app);
                 app.appIndex = this.appsArray.length - 1;
                 if (this.isAllAppsLoaded()){
+                    if (buttonsLoaded === false){
+                        loadButtonsToTabs(this.appsArray)
+                    }
                     if (pluginAppsOnLoad !== null){
                         //pluginAppsOnLoad(apps);
                         
@@ -60,9 +72,23 @@ function Apps(apps = null, size = 0){
         return null;
     }
 
+   
     this.isAllAppsLoaded = () => {
         if (this.appsArray !== null){
-            return this.appsArray.length === this.size;
+            let flag = false;
+            if (this.appsArray.length === this.size){
+                let flag2 = false;
+                //console.log(this.appsArray);
+                for (let i = 0; i < this.appsArray.length; i++){
+                    //console.log(this.appsArray[i].getAppInfo().isAppInfoLoaded())
+                    if (this.appsArray[i].getAppInfo().isAppInfoLoaded() === false){
+                        flag2 = true;
+                        break;
+                    }
+                }
+                flag = flag2 === false;
+            }
+            return flag === true ;
         }
         return false;
     }
@@ -71,10 +97,12 @@ function Apps(apps = null, size = 0){
 function App(mainFile = null, infoFile = null, appindx = null){
     this.appIndex = appindx;
     this.infoFile = infoFile;
+    this.appButton = null;
     this.appInfo = new AppInfo(this, infoFile).extractAppInfoFromFile();
     this.mainFile = this.appInfo != null ? this.appInfo.getMainUrl() : null;
     this.setMainFile = (file) => this.mainFile = file;
     this.getAppNumber = () => parseInt(this.appIndex) + 1;
+    this.getAppInfo = () => this.appInfo;
     this.toString = () => 'Main entry file: ' + mainFile + '\nInfo ' + this.appInfo + '\nApp Number: ' + this.getAppNumber();
 }
 
@@ -84,10 +112,23 @@ function AppInfo(app = null, infoResFile = null){
     let appVersion = null;
     let mainURL = null;
     let appPictureURL = null;
+    let catagoryTypesArray = null;
+    let appInfoLoaded = false;
     
-    let callback = () => pluginAppInfoLoaded(this);
+    let callback = () => {
+        let button = pluginAppInfoLoaded(this);
+        console.log(button);
+        app.appButton = button;
+        console.log(app);
+        appInfoLoaded = true;
+        console.log("App loaded: " + appName);
+        if (buttonsLoaded === false && isAllAppsLoaded() === true){
+            loadButtonsToTabs(apps.appsArray);
+        }
+
+    }
+
     let organizeAppInfo = function() {
-        
         if (this.readyState === 4 && this.status === 200) {
            let json = JSON.parse(this.responseText);
            appName = json.Name;
@@ -95,6 +136,31 @@ function AppInfo(app = null, infoResFile = null){
             mainURL = json.MainURL;
            appPictureURL = json.PictureURL;
            app.setMainFile(mainURL);
+           if (json.hasOwnProperty(JSONKeys.additionalParams)){
+               let additional = json[JSONKeys.additionalParams];
+               let catagoryTypes = additional != null && additional.hasOwnProperty(JSONKeys.catagoryTypes) === true ? additional[JSONKeys.catagoryTypes] : null;
+               let size = catagoryTypes != null && catagoryTypes.hasOwnProperty(JSONKeys.size) === true? catagoryTypes[JSONKeys.size] : -1;
+               if (size >= 0){
+                   catagoryTypesArray = catagoryTypes != null && catagoryTypes.hasOwnProperty(JSONKeys.catagoryTypeKeys) === true? catagoryTypes[JSONKeys.catagoryTypeKeys] : null
+                   if (catagoryTypesArray != null){
+                        for (let i =0; i < catagoryTypesArray.length; i++){
+                            let type = catagoryTypesArray[i];
+                            catagoryTypesArray[i] = catagoryTypes[type];
+                            let priority = catagoryTypesArray[i].hasOwnProperty(JSONKeys.priority) === true ? catagoryTypesArray[i]["Priority"] : null;
+                            catagoryTypesArray[i] = new CatagoryType(this,type,priority);
+                        }
+                        console.log(catagoryTypesArray);
+                    }else{
+                        console.log(catagoryTypes);
+                    }
+               }
+               else{
+                   console.log("Size: " + size + "\n Params not read");
+               }
+           }
+           else{
+               console.log("JSOn does not have adittional params");
+           }
            callback();
         }
         else{
@@ -119,11 +185,13 @@ function AppInfo(app = null, infoResFile = null){
         callback();
     }
 
+    this.isAppInfoLoaded = () => appInfoLoaded;
     this.getApp = () => app;
     this.getAppName = () => appName;
     this.getAppVersion = () => appVersion;
     this.getMainUrl = () => mainURL;
     this.getAppPictureUrl = () => appPictureURL;
+    this.getAppCatagoryTypes = () => catagoryTypesArray;
     this.toString = () => {
         return 'App Name: ' + appName
                 + '\nApp Version:' + appVersion
@@ -131,5 +199,19 @@ function AppInfo(app = null, infoResFile = null){
                 + '\nPicture URL' + appPictureURL;
     }
 
+    function CatagoryType(appInfo = null, catagoryType = null, priority = null){
+        this.catagoryType = catagoryType;
+        this.priority = priority;
+        this.getAppInfo = () => appInfo;
+        this.getPriority = () => this.priority;
+        
+    }
+    function OptionalParam(priority = null, paramKey = null, param = null){
+        
+        this.getPriority = () => priority;
+        this.getParamKey = () => paramKey;
+        this.getParam = () => param;
+
+    }
     
 }

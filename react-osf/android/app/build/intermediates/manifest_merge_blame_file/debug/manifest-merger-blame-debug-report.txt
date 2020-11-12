@@ -136,99 +136,104 @@
 63-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:44:19-66
 64            </intent-filter>
 65        </activity>
-66        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-66-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:5-81
-66-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:15-79
-67
-68        <meta-data
-68-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:91
-69            android:name="org.unimodules.core.AppLoader#react-native-headless"
-69-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-79
-70            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
-70-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-88
-71
-72        <provider
-72-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
-73            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-73-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
-74            android:authorities="com.reactosf.fileprovider"
-74-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
-75            android:exported="false"
-75-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
-76            android:grantUriPermissions="true" >
-76-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
-77            <meta-data
-77-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
-78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
-79                android:resource="@xml/file_provider_paths" />
-79-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
-80        </provider>
-81        <provider
-81-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-26:20
-82            android:name="expo.modules.filesystem.FileSystemFileProvider"
-82-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-74
-83            android:authorities="com.reactosf.FileSystemFileProvider"
-83-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
-84            android:exported="false"
-84-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-37
-85            android:grantUriPermissions="true" >
-85-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-47
-86            <meta-data
-86-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
-87                android:name="android.support.FILE_PROVIDER_PATHS"
-87-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
-88                android:resource="@xml/file_system_provider_paths" />
-88-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
-89        </provider>
-90
-91        <service
-91-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-19:40
-92            android:name="expo.modules.location.services.LocationTaskService"
-92-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-78
-93            android:exported="false" />
-93-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
-94
-95        <activity
-95-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-96-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-97            android:exported="false"
-97-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-98-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-99
-100        <meta-data
-100-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
-101            android:name="com.google.android.gms.version"
-101-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
-102            android:value="@integer/google_play_services_version" />
-102-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
-103
-104        <service
-104-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
-105            android:name="androidx.room.MultiInstanceInvalidationService"
-105-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
-106            android:exported="false" />
-106-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+66        <activity
+66-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:5-170
+67            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+67-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:15-79
+68            android:configChanges="keyboardHidden|orientation"
+68-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:118-168
+69            android:screenOrientation="landscape" />
+69-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:80-117
+70
+71        <meta-data
+71-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:91
+72            android:name="org.unimodules.core.AppLoader#react-native-headless"
+72-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-79
+73            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+73-->[:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-88
+74
+75        <provider
+75-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+76            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+76-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+77            android:authorities="com.reactosf.fileprovider"
+77-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+78            android:exported="false"
+78-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+79            android:grantUriPermissions="true" >
+79-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+80            <meta-data
+80-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+82                android:resource="@xml/file_provider_paths" />
+82-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+83        </provider>
+84        <provider
+84-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-26:20
+85            android:name="expo.modules.filesystem.FileSystemFileProvider"
+85-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-74
+86            android:authorities="com.reactosf.FileSystemFileProvider"
+86-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+87            android:exported="false"
+87-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-37
+88            android:grantUriPermissions="true" >
+88-->[:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-47
+89            <meta-data
+89-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+91                android:resource="@xml/file_system_provider_paths" />
+91-->[:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+92        </provider>
+93
+94        <service
+94-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-19:40
+95            android:name="expo.modules.location.services.LocationTaskService"
+95-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-78
+96            android:exported="false" />
+96-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
+97
+98        <activity
+98-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+102
+103        <meta-data
+103-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+104            android:name="com.google.android.gms.version"
+104-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+105            android:value="@integer/google_play_services_version" />
+105-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+106
 107        <service
-107-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
-108            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-108-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+107-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+108            android:name="androidx.room.MultiInstanceInvalidationService"
+108-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
 109            android:exported="false" />
-109-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+109-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
 110        <service
-110-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
-111            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-111-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+110-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+111            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+111-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
 112            android:exported="false" />
-112-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+112-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
 113        <service
-113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
-114            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+114            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
 115            android:exported="false" />
-115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
-116    </application>
-117
-118</manifest>
+115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+116        <service
+116-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+117            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+117-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+118            android:exported="false" />
+118-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+119    </application>
+120
+121</manifest>

@@ -1,4 +1,5 @@
-hideHTMLDoc();
+//hideHTMLDoc();
+var loader = document.getElementById("loader");
 window.history.replaceState( null, null, window.location.href );
 var docVisibilityPromise =  new Promise(function(r,c){
     setTimeout(r,2000);
@@ -6,30 +7,30 @@ var docVisibilityPromise =  new Promise(function(r,c){
 var mainButtons = null;
 var loggedInUser = null;
 var auth = null;
+var crptojs = null;
 
 
 /**
  * Called when the window is fully loaded
  */
-window.addEventListener('load', (event) =>
-{
+window.addEventListener('load', (event) => {
     initButtons();
     let params = getURLParams();
     logParamaters(params);
-    
-
     auth = retrieveAuthcode(params);
      loggedInUser = getLoggedInUser(auth);
+     /*
     let req = server.createServerRequest("GET", "/osf project/kiosk program/src/main page/res/index.html", true);
     console.log(req.getHttpRequest());
     server.applyCredentialsToRequest(req.getHttpRequest(), loggedInUser[0], loggedInUser[1]);
     server.sendServerRequest(req);
-    
+    */
     pluginAppsOnLoad = pluginAppsLoadedCallback;
     loadApps();
     require(['crypto-js'], function (CryptoJS) {
     console.log("window fully loaded");
     console.log(CryptoJS);
+    cryptojs = CryptoJS;
     defaultCipherSettings = {
         mode: CryptoJS.mode.CFB,
         padding: CryptoJS.pad.AnsiX923
@@ -44,6 +45,9 @@ window.addEventListener('load', (event) =>
     });
 });
 
+/**
+ * Gets parameters embedded in the url.
+ */
 function getURLParams(){
     let element = document.getElementById('param-url');
     let url = element !== null ? element.href : null;
@@ -58,7 +62,6 @@ function getURLParams(){
  * @param {} params 
  */
 function retrieveAuthcode(params = null){
-    
     if (params !== null){
         let authcode = params.find((element) => element['key'] === 'authcode');
         if (authcode !== undefined){
@@ -118,7 +121,9 @@ function getLoggedInUser(authcode){
     if (isSet(appNum)){
         console.log(mainPageButtons);
         let index = parseInt(appNum - 1);
-        let button = mainPageButtons[index];
+        let button = allApplicationButtons[index].querySelector("input");
+        let buttonTitle = allApplicationButtons[index].querySelector("p");
+        buttonTitle.textContent = appInfo.getAppName();
         button.setAttribute('name', 'app-'.concat(appNum));
         button.src = appInfo.getAppPictureUrl();
         button.onclick = function(event){
@@ -132,16 +137,6 @@ function getLoggedInUser(authcode){
                 let filePath = app.mainFile;
                 console.log(filePath);
                 if (filePath !== null){
-                    /*
-                    let req = server.createServerRequest("POST", "/osf project/kiosk server/php scripts/open-app-request.php", true,function(){
-                            //
-                        }
-                    );
-                    let data = new FormData();
-                    data.append('furlpath', filePath);
-                    req.getHttpRequest().send(data);
-                    console.log("posted to : " + "/osf project/kiosk server/php scripts/open-app-request" );
-                    */
                    document.getElementById('form-input').value = [filePath, loggedInUser[0], loggedInUser[1]];
                    document.getElementById('app-request-form').submit();
                     
@@ -151,8 +146,8 @@ function getLoggedInUser(authcode){
                 }
             }
 
-            return this;
-        };
+        }
+        return allApplicationButtons[index];
         console.log(button);
     }
 
@@ -161,19 +156,46 @@ function getLoggedInUser(authcode){
             showHTMLDoc();
         }
     }
-           
-      
+           return null;
   }
 
-  function isSet(element){
+  function isSet(element) {
       return element !== undefined && element !== null;
   }
 
 
   function hideHTMLDoc(){
-    document.getElementsByTagName("html")[0].style.visibility = "hidden";
+    //document.getElementsByTagName("html")[0].style.visibility = "hidden";
+    setVisibilityOfBody("hidden");
   }
+
   function showHTMLDoc(){
-    document.getElementsByTagName("html")[0].style.visibility = "visible";
+    //document.getElementsByTagName("html")[0].style.visibility = "visible";
+    setVisibilityOfBody("visible");
+    if (removeLoader() === false){
+        if (removeLoader() === false){
+            console.log("Failed to remove loader");
+            console.log(loader);
+        }
+    }
+  }
+
+  function setVisibilityOfBody(visibility){
+    let body = document.getElementById("app-body");
+    console.log(body);
+    if (isSet(body)){
+        body.style.visibility = visibility;
+    }
+  }
+  function removeLoader(){
+    if (loader !== null){
+        loader.remove();
+        console.log("Loader removed");
+        return true;
+    } else{
+        loader = document.getElementById("loader");
+        return false;
+        
+    }
   }
 

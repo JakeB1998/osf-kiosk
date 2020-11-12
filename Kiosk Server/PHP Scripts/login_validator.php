@@ -3,11 +3,12 @@
 
 require 'database-utils.php';
 require dirname(__FILE__).'/../php classes/statement.php';
+require 'encoder.php';
 $loginPagePath = "../../kiosk program/src/login page/login.html";
 chdir("../../");
 session_start();
 ob_start();
-echo 'refereer : ' . $_SERVER['HTTP_REFERER'];
+//echo 'refereer : ' . $_SERVER['HTTP_REFERER'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // The request is using the POST method
     
@@ -71,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 else{
-    echo $_SERVER['REQUEST_METHOD'];
+    //echo $_SERVER['REQUEST_METHOD'];
     //header("Location: " . $loginPagePath);
 }
 
@@ -131,8 +132,22 @@ function validate_cred($email_local = null, $password_local = null){
         {
             if ($result->num_rows > 0) {
                 // output data of each row
+                $flag = false;
                 while($row = $result->fetch_row()) {
-                echo  "<br>". $row;
+                //echo  "<br>". $row;
+                //echo "<br>" . $email_local . " " . $password_local;
+                //echo "<br>" . $row[0];
+                //echo "<br>" . $row[1];
+                    if ($row[0] == $email_local && $row[1] == $password_local){
+                        $flag = true;
+                    break;
+                    }
+                }
+                if ($flag){
+                    return true;
+                }
+                else{
+                    return false;
                 }
             } else {
                 echo "0 results";

@@ -319,7 +319,11 @@ ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\And
 	android:name
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:44:19-66
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:5-81
+ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:5-170
+	android:screenOrientation
+		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:80-117
+	android:configChanges
+		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:118-168
 	android:name
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:47:15-79
 uses-sdk
