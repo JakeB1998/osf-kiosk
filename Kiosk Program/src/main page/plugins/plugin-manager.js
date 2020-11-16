@@ -49,7 +49,7 @@ function Apps(apps = null, size = 0){
         }
         return null;
     }
-
+    this.getApps = () => this.appsArray;
     this.addApp = (app = null) => {
         if (app !== null && this.appsArray !== null){
             console.log(this.appsArray);

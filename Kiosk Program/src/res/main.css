@@ -9,7 +9,7 @@ div > input{
     background-size: 25px;
     position: relative;
     padding: 10px;
-    left: 25%;
+    left: calc(50% - 50px); 
 }
 /*
 #main-buttons div{
@@ -23,7 +23,8 @@ div > input{
 }
 */
 #main-buttons div > p{
-   
+   position: relative;
+   top: 10%;
     text-align: center;
 }
 
@@ -43,7 +44,12 @@ div > input{
 }
 
 .flex-container {
-    display: flex;
+  position: relative;
+  top: 10%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .flex-child {
@@ -57,7 +63,7 @@ div > input{
 
 .img-with-text {
     
-  overflow: auto;
+  overflow: hidden;
 }
 
 body {

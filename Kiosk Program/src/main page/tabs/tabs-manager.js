@@ -4,6 +4,8 @@ var tabsUI = isSet(tabBar) ? Array.prototype.slice.call(tabBar.children) : null;
 var tabs = isSet(tabsUI) ? new Array(tabsUI.length) : new Array(0);
 var buttonsLoaded = false;
 const maxTabCount = 5;
+const buttonPercentIncrement = 25;
+const maxButtonPerRow = 4;
 window.addEventListener('load', (event) => {
     tabBar = document.getElementById(tabBarID);
     tabsUI = isSet(tabBar) ? tabBar.children : null;
@@ -24,8 +26,13 @@ function loadButtonsToTabs(apps = null){
     console.log("Loading buttons to tabs");
     let typesPresent = new Array(0);
     tabbedButtons = new Array(0);
+    let buttonArr = null;
     
     if (apps != null){
+        buttonArr = apps.map(x => x.appButton);
+        console.log(buttonArr);
+        //buttonArr = Array.prototype.slice.call(buttonArr.children).map(x => x.type === "input");
+        //console.log(buttonArr);
         console.log(apps);
         for (let i =0; i < apps.length; i++){
             //console.log(apps[i]);
@@ -55,9 +62,12 @@ function loadButtonsToTabs(apps = null){
                 let z = tabbedButtons.findIndex((x) => e.srcElement.textContent === x.tabName);
                 if (z !== -1){
                     loadButtonsDelegate(tabbedButtons[z].tabButtons);
+                    
                 }
             });
         }
+
+        
         
     }  
     
@@ -72,7 +82,8 @@ function loadButtonsToTabs(apps = null){
         tabbedButtons[i].tabButtons = buttons;
         console.log(buttons);
     } 
-    loadButtonsDelegate(tabbedButtons[0]);
+    //loadButtonsDelegate(tabbedButtons[0]);
+    loadButtonsDelegate(buttonArr);
 }
 
 function loadTab(tab = null){
@@ -94,6 +105,10 @@ function loadButtonsDelegate(buttons = null){
             buttonParent.appendChild(buttons[i]);
         }
         mainPageButtons = buttons;
+        let length = buttons.length;
+        length = length >= maxButtonPerRow ? 100 : length * buttonPercentIncrement;
+        //deal with second row 
+        buttonParent.style.width = length + "%";
     }
 }
 

@@ -109,6 +109,7 @@ function getLoggedInUser(authcode){
    */
   function pluginAppsLoadedCallback(apps) {
     console.log('Apps loaded and ready: ' + apps);
+    
   }
 
   /**
