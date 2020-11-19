@@ -3,7 +3,7 @@ var tabBar = document.getElementById(tabBarID);
 var tabsUI = isSet(tabBar) ? Array.prototype.slice.call(tabBar.children) : null;
 var tabs = isSet(tabsUI) ? new Array(tabsUI.length) : new Array(0);
 var buttonsLoaded = false;
-const maxTabCount = 5;
+const maxTabCount = 6;
 const buttonPercentIncrement = 25;
 const maxButtonPerRow = 4;
 window.addEventListener('load', (event) => {
@@ -51,7 +51,7 @@ function loadButtonsToTabs(apps = null){
     for (let i =0; i< tabsUI.length; i++){
         console.log(tabsUI[i]);
         let index = 0;
-        if (typesPresent.findIndex((e) => e.toLowerCase() === tabsUI[i].textContent.toLowerCase()) === -1){
+        if (typesPresent.findIndex((e) => e.toLowerCase() === tabsUI[i].name.toLowerCase()) === -1){
             tabsUI[i].remove();
         }
         else{
@@ -59,7 +59,7 @@ function loadButtonsToTabs(apps = null){
             tabsUI[i].addEventListener("click", (e) => {
                 console.log("Clicked");
                 console.log(e);
-                let z = tabbedButtons.findIndex((x) => e.srcElement.textContent === x.tabName);
+                let z = tabbedButtons.findIndex((x) => e.srcElement.name === x.tabName);
                 if (z !== -1){
                     loadButtonsDelegate(tabbedButtons[z].tabButtons);
                     

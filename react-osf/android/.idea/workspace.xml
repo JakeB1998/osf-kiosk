@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eb8cc7b-6d90-4fa8-a7ff-2daddb50bfe6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/app-1/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/app-1/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/app-2/info/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/app-2/info/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/directory-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/plugins/plugin-dir/directory-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/res/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/res/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/res/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/res/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Program/src/main page/tabs/tabs-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Program/src/main page/tabs/tabs-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Server/PHP Scripts/login_validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Server/PHP Scripts/login_validator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kiosk Server/PHP Scripts/open-app-request.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kiosk Server/PHP Scripts/open-app-request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/reactosf/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/reactosf/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,12 +56,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/reactosf/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+            <state relative-caret-position="534">
+              <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3751#3752#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +111,8 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,11 +226,11 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49840087" weight="0.32936078" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4936034" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49520257" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.37260127" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50586355" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49413645" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4946695" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="8" />
@@ -249,12 +262,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/reactosf/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        <state relative-caret-position="534">
+          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3751#3752#0" expanded="true" />
           </folding>
         </state>
       </provider>

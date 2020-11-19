@@ -1,6 +1,10 @@
 {
-   "size" : 2,
+   "size" : 5,
    "urls" : [
-         "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-1/info.json", "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-2/info/info.json"
+         "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-1/info.json", 
+         "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-2/info/info.json",
+         "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-3/info/info.json",
+         "/osf project/kiosk program/src/main page/plugins/plugin-dir/incorrectly-named-app-4/info/info.json",
+         "/osf project/kiosk program/src/main page/plugins/plugin-dir/app-5/info/info.json"
    ]
 }

@@ -1,0 +1,20 @@
+{
+    "Name": "Food App 3",
+    "Version": "000.000.000",
+    "MainURL": "kiosk program/src/main page/plugins/plugin-dir/app-2/index.html",
+    "AdditionalParams" : {
+        "Size" : "1",
+        "CatagoryTypes" : {
+            "Size": "2",
+            "CatagoryTypeKeys": ["Main", "Food"],
+            "Main": {
+                "Priority": 1
+            },
+            "Food": {
+                "Priority": 0
+            }
+        }
+
+    },
+    "PictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZi5lc7wh8EFFjAPpTyqzDL_17yD4m-vsGg&usqp=CAU"
+}

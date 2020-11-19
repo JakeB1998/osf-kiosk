@@ -8,16 +8,27 @@ var mainButtons = null;
 var loggedInUser = null;
 var auth = null;
 var crptojs = null;
-
+var ReactWebView = null;
+var urlParams = null;
 
 /**
  * Called when the window is fully loaded
  */
 window.addEventListener('load', (event) => {
+    
+    ReactWebView = window.ReactNativeWebView;
+    if (isSet(ReactWebView)){
+    ReactWebView.postMessage("MEssage from non native");
+    } else{
+        console.log("React webview not set, non moible.");
+    }
+    window.postMessage("Message from non native");
     initButtons();
-    let params = getURLParams();
-    logParamaters(params);
-    auth = retrieveAuthcode(params);
+    urlParams = getURLParams(document.URL);
+    
+    console.log("Parameters in URL");
+    logParamaters(urlParams);
+    auth = retrieveAuthcode(urlParams);
      loggedInUser = getLoggedInUser(auth);
      /*
     let req = server.createServerRequest("GET", "/osf project/kiosk program/src/main page/res/index.html", true);
@@ -45,17 +56,7 @@ window.addEventListener('load', (event) => {
     });
 });
 
-/**
- * Gets parameters embedded in the url.
- */
-function getURLParams(){
-    let element = document.getElementById('param-url');
-    let url = element !== null ? element.href : null;
-    if (element !== null){
-        element.remove();
-    }
-    return hasParameters(url) === true ? parseParameters(url) : null;
-}
+
 
 /**
  * Retrieves login information
@@ -138,7 +139,7 @@ function getLoggedInUser(authcode){
                 let filePath = app.mainFile;
                 console.log(filePath);
                 if (filePath !== null){
-                   document.getElementById('form-input').value = [filePath, loggedInUser[0], loggedInUser[1]];
+                   document.getElementById('form-input').value = [filePath]; //, loggedInUser[0], loggedInUser[1]
                    document.getElementById('app-request-form').submit();
                     
                 }
@@ -199,4 +200,6 @@ function getLoggedInUser(authcode){
         
     }
   }
+
+
 

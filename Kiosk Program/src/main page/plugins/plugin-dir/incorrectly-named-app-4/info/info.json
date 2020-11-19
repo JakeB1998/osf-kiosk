@@ -1,0 +1,21 @@
+{
+    "Name": "All App",
+    "Version": "000.000.000",
+    "MainURL": "kiosk program/src/main page/plugins/plugin-dir/app-2/index.html",
+    "AdditionalParams" : {
+        "Size" : "1",
+        "CatagoryTypes" : {
+            "Size": "2",
+            "CatagoryTypeKeys": ["Main",  "Shelter"],
+            "Main": {
+                "Priority": 1
+            },
+            "Shelter": {
+                "Priority": 0
+            }
+            
+        }
+
+    },
+    "PictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZi5lc7wh8EFFjAPpTyqzDL_17yD4m-vsGg&usqp=CAU"
+}

@@ -74,6 +74,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 else{
     //echo $_SERVER['REQUEST_METHOD'];
     //header("Location: " . $loginPagePath);
+    $auth = base64_encode($client_email . ":" .  $client_password);
+    $context = stream_context_create([
+    "http" => [
+        "header" => "Authorization: Basic 
+        " . $auth
+    ]
+    ]);
+    $location = $paramString != null ? $location . $paramString : $location;
+    //header("Location: " . $client_username . ":". $client_password . "@" . $location);
+    echo "<a id='param-url' href='$location'>Start</a>";
+    readfile('kiosk program/src/main page/res/index.html', false, $context);  //'var/www/html/OSF Project/Kiosk Program/src/main page/index.html'
 }
 
 function addParameters($params = null){
@@ -117,7 +128,6 @@ function validate_cred($email_local = null, $password_local = null){
     }
 
     if ($email_local != null && $password_local != null){
-           
         $conn =   open_db_connection('localhost', ['new_user','Redbirdp1'], 'login');
         if ($conn ->connect_errno){
             echo('connection failed: ' . $conn->connect_error);
