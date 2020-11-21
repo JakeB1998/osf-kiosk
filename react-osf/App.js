@@ -1,6 +1,7 @@
 
 import { useState,useRef } from 'react';
 import { DeviceEventEmitter } from 'react-native';
+import { ScreenStackHeaderCenterView } from 'react-native-screens';
 //import BrowserHistory from './node_modules/react-router/lib/BrowserHistory';
 //import { Router, Route, Link ,withRouter, useHistory} from './node_modules/react-router';
 import history from './node_modules/history';
@@ -53,7 +54,7 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     
-    this.state = {url: "http://50.83.113.1/osf%20project/kiosk%20program/src/login%20page/login.html", orientation: isPortrait() ? 'portrait' : 'landscape'}; 
+    this.state = {url: homeURL, orientation: isPortrait() ? 'portrait' : 'landscape'}; 
     // Event Listener for orientation changes
     Dimensions.addEventListener('change', () => {
       //window.alert('orientation changed');
@@ -113,35 +114,36 @@ export default class App extends React.Component {
       return(
           <React.Fragment>
             
-            <View style={{flexDirection:"row", backgroundColor: '#9FA8DA' }}>
+            <View style={{ backgroundColor: '#9FA8DA' }}>
               <View style={ {width:1000,flexDirection:"row"}}>
                 <TouchableOpacity  activeOpacity={0.5} onPress = {() => {console.log("Click"); this.goBack()}}>
                   <Image
                   source={require('./images/back-btn1.png')}
                   style={{height:50, width:50}}
                   />
-              </TouchableOpacity>
-              <TouchableOpacity  activeOpacity={0.5}  onPress = {() => this.goForward()}>
-                  <Image
-                  source={require('./images/back-btn1.png')}
-                  style={{height:50, width:50,  transform: [{ rotate: '180deg' }]}}
-                  />
-              </TouchableOpacity>
-              <TouchableOpacity  activeOpacity={0.5}   onPress = {() => this.goHome()}>
-                  <Image
-                  source={require('./images/home-btn.png')}
-                  style={{height:35, width:35, top:7 , left:5}}
-                  />
-              </TouchableOpacity>
-              <View>
-                <Text style = {{left: '50%'}}>OSF Kisok</Text>
+                </TouchableOpacity>
+                <TouchableOpacity  activeOpacity={0.5}  onPress = {() => this.goForward()}>
+                    <Image
+                    source={require('./images/back-btn1.png')}
+                    style={{height:50, width:50,  transform: [{ rotate: '180deg' }]}}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity  activeOpacity={0.5}   onPress = {() => this.goHome()}>
+                    <Image
+                    source={require('./images/home-btn.png')}
+                    style={{height:35, width:35, top:7 , left:5}}
+                    />
+                </TouchableOpacity>
               </View>
+              <View style= {{ position: 'relative', backgroundColor: 'red'}}>
+                <Text style = {styles.title}>OSF Kisok</Text>
               </View>
           </View>
             <WebView ref = {(ref) => {
               this.webView = ref;
               
               }} 
+            cacheEnabled={false}
             source={{uri: url}}
             onNavigationStateChange={ (e) => this.handleWebViewNavigationStateChange(e)} 
             onMessage={(event) => {
@@ -198,8 +200,8 @@ const styles = StyleSheet.create({
   title:{
     flex:1,
     width:100,
-    
     alignItems: 'center',
     justifyContent: 'center'
   },
+  
 });

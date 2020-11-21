@@ -1,0 +1,141 @@
+
+body {
+  background-image: linear-gradient(to top,#DCDCCF, #79D879);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-size: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+span {
+  color: black;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+.header { 
+  background: linear-gradient(-45deg, #EC9C83, #E3BBCA, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+	
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 60%;
+	}
+	50% {
+		background-position: 100% 40%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}	
+}
+
+.header-user {
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 120px;
+  background: lightgrey;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.container {
+  display: fixed;
+}
+
+.button {
+  display: inline-block;
+  height: 70px;
+  width: 150px;
+  font-size: 30px;
+  font-weight: bolder;
+  border: 2px solid black;
+  padding: 1px 1px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-logout {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transform: scale(0.90);
+}
+
+.button:hover {
+  background-color: Transparent;
+  font-size: 37px;
+  color: aqua;
+}
+
+.button-logout:active {
+	transform: scale(0.90);
+}
+
+.button-logout:hover {
+	background-color: lightblue;
+  color: black;
+}
+
+
+.button1 {
+  background:url(images/food.jpg);
+  background-size: cover;
+}
+
+.button2 {
+  background:url(images/medical.jpg);
+  background-size: cover;
+}
+
+.button3 {
+  background:url(images/clothes.jpg);
+  background-size: cover;
+}
+
+.button4 {
+  background:url(images/house.jpg);
+  background-size: cover;
+}
+
+.button5 {
+  background:url(images/info1.jpg);
+  background-size: cover;
+}

@@ -57,6 +57,10 @@ function parseParameters(url = null){
     return params;
 }
 
+/**
+ * Logs parameters to console.
+ * @param {*} params 
+ */
 function logParamaters(params = null){
     if (params !== null){
         for (i = 1; i <= params.length; i++){

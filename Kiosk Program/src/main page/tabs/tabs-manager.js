@@ -21,6 +21,10 @@ window.addEventListener('load', (event) => {
     }
   });
 
+  /**
+   * Loads buttons into tab objects.
+   * @param {*} apps 
+   */
 function loadButtonsToTabs(apps = null){
     buttonsLoaded = true;
     console.log("Loading buttons to tabs");
@@ -86,6 +90,10 @@ function loadButtonsToTabs(apps = null){
     loadButtonsDelegate(buttonArr);
 }
 
+/**
+ * Loads the contents of a tab object.
+ * @param {*} tab 
+ */
 function loadTab(tab = null){
     if (tab != null){
         console.log(tab);
@@ -93,6 +101,10 @@ function loadTab(tab = null){
     }
 }
 
+/**
+ * Delegate method that loads buttons from tabbed object into the screen view.
+ * @param {*} buttons 
+ */
 function loadButtonsDelegate(buttons = null){
     console.log(buttons);
     if (mainPageButtons !== null){

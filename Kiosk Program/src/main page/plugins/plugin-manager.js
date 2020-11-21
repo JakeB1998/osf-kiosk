@@ -13,16 +13,19 @@ const JSONKeys = {
     "catagoryTypeKeys" : "CatagoryTypeKeys"
 };
 
-
+/**
+ * Loads apps from Json file.
+ */
 function loadApps(){
     let req = server.createServerRequest("GET", dir_base(),true, directoryInfoCallback, null, 'text');
     server.applyJsonOverride(req);
     server.applyCredentialsToRequest(req.getHttpRequest(), defaulCred[0], defaulCred[1]);
-    server.sendServerRequest(req);
-
-    
+    server.sendServerRequest(req); 
 }
 
+/**
+ * First callback initiated from function: loadApps().
+ */
 function directoryInfoCallback(){
     if (this.readyState == 4){
         let json =  JSON.parse(this.responseText);
