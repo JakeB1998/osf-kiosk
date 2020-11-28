@@ -1,7 +1,7 @@
 {
-    "Name": "Food App 3",
+    "Name": "Food Bank Locator",
     "Version": "000.000.000",
-    "MainURL": "kiosk program/src/main page/plugins/plugin-dir/app-2/index.html",
+    "MainURL": "https://www.peoriafoodbank.org/agency-locator/",
     "AdditionalParams" : {
         "Size" : "1",
         "CatagoryTypes" : {
@@ -16,5 +16,5 @@
         }
 
     },
-    "PictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZi5lc7wh8EFFjAPpTyqzDL_17yD4m-vsGg&usqp=CAU"
+    "PictureURL": "https://www.peoriafoodbank.org/wp-content/uploads/2018/10/logo-FINAL-e1425331842403.png"
 }

@@ -72,11 +72,11 @@
 31-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-77
 31-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-74
 32    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-32-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
-32-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+32-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+32-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
 33    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-33-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
-33-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+33-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+33-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
 34
 35    <application
 35-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:24:3-48:17
@@ -123,8 +123,8 @@
 57-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:38:7-38
 58            android:theme="@style/Theme.App.SplashScreen"
 58-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:40:7-52
-59            android:windowSoftInputMode="adjustResize" >
-59-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:39:7-49
+59            android:windowSoftInputMode="adjustNothing" >
+59-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:39:7-50
 60            <intent-filter>
 60-->C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:42:7-45:23
 61                <action android:name="android.intent.action.MAIN" />
@@ -195,20 +195,20 @@
 96-->[:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
 97
 98        <activity
-98-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+98-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
 99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-99-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+99-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 100            android:exported="false"
-100-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+100-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
 101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
 102
 103        <meta-data
-103-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+103-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
 104            android:name="com.google.android.gms.version"
-104-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+104-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
 105            android:value="@integer/google_play_services_version" />
-105-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+105-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
 106
 107        <service
 107-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
@@ -217,23 +217,23 @@
 109            android:exported="false" />
 109-->[androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
 110        <service
-110-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+110-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
 111            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-111-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+111-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
 112            android:exported="false" />
-112-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+112-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
 113        <service
-113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
 114            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
 115            android:exported="false" />
-115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
 116        <service
-116-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+116-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
 117            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-117-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+117-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
 118            android:exported="false" />
-118-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+118-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
 119    </application>
 120
 121</manifest>

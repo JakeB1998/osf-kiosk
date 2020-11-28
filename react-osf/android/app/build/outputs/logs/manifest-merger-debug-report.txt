@@ -15,14 +15,14 @@ MERGED from [:react-native-gesture-handler] C:\Users\jakem\Desktop\osf project\r
 MERGED from [:react-native-reanimated] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-screens] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1ba97fdefd969233de199c112910b947\jetified-react-native-0.63.3\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bd4b55b38506ed45a38c8e179f80d65b\jetified-react-native-0.63.3\AndroidManifest.xml:2:1-13:12
 MERGED from [:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-29:12
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\0cf7e234e8a96ed7a28c1f1184df0b89\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\cf9c024ed783237fce6d79dff3ddfc96\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3017a25ce3cb2bf8b7edc16a81b382a0\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\9792dcc22ac78c7c5168afbedfc8b09c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\214733ad5cad81eda2415bb80e421234\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b9604666a0b9bbe1ab905eeb5622e5c4\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c4a0854b2c4c976f5fd7b439b5911773\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -64,7 +64,7 @@ MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\jakem\.gradle\caches\t
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\42754f512b6255d0a9d0ecf2560b2cee\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\11bb6f62648365abe3010d6689bd96c2\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\28888a6f6660db47b3788df392c672a7\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\efb592adf2592d134c27edc4a56e19d2\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -86,7 +86,7 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\jakem\.gradl
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\8dc6c78d6d7c962ba02416981491cd60\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\e9b634612e7afd6e65f893d0f7273c92\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\f16976a635030c1d93e19a07e5655a32\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\096a8f1603949d4f18a7cbc7eecc51f2\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\422ace6a75dd412e501b9bf85446fc1e\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
@@ -101,8 +101,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\jakem\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\4da6ddd3c71dbaec92b0fdf3bbca4ce7\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\2ef959591ee3dfd7e7d0f130ebacb270\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:2:1-30:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b940bc4e15a785829073e8ad9a73bb6e\jetified-fbcore-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:2:1-30:12
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\4cd495c08d3b8e9905d54b1d57aced9a\jetified-fbcore-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:2:1-9:12
 INJECTED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -162,16 +162,16 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:11:3-78
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:12:5-81
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:12:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:12:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:12:5-81
 	android:name
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:11:20-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:12:3-76
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:14:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:14:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:14:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:12:20-74
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
@@ -224,38 +224,38 @@ MERGED from [:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf projec
 MERGED from [:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
 MERGED from [:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1ba97fdefd969233de199c112910b947\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1ba97fdefd969233de199c112910b947\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bd4b55b38506ed45a38c8e179f80d65b\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bd4b55b38506ed45a38c8e179f80d65b\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
 MERGED from [:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-27:19
 MERGED from [:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-27:19
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-20:19
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-20:19
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\0cf7e234e8a96ed7a28c1f1184df0b89\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\0cf7e234e8a96ed7a28c1f1184df0b89\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\cf9c024ed783237fce6d79dff3ddfc96\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\cf9c024ed783237fce6d79dff3ddfc96\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3017a25ce3cb2bf8b7edc16a81b382a0\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3017a25ce3cb2bf8b7edc16a81b382a0\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\9792dcc22ac78c7c5168afbedfc8b09c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\9792dcc22ac78c7c5168afbedfc8b09c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\214733ad5cad81eda2415bb80e421234\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\214733ad5cad81eda2415bb80e421234\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\42754f512b6255d0a9d0ecf2560b2cee\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\42754f512b6255d0a9d0ecf2560b2cee\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\11bb6f62648365abe3010d6689bd96c2\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\11bb6f62648365abe3010d6689bd96c2\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\e9b634612e7afd6e65f893d0f7273c92\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\e9b634612e7afd6e65f893d0f7273c92\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\f16976a635030c1d93e19a07e5655a32\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\f16976a635030c1d93e19a07e5655a32\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\2786c84c1e653e40bd67508414ca298f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:18:5-28:19
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:18:5-28:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
@@ -301,7 +301,7 @@ ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\And
 	android:launchMode
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:38:7-38
 	android:windowSoftInputMode
-		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:39:7-49
+		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:39:7-50
 	android:configChanges
 		ADDED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\main\AndroidManifest.xml:37:7-84
 	android:theme
@@ -350,22 +350,22 @@ MERGED from [:react-native-screens] C:\Users\jakem\Desktop\osf project\react-osf
 MERGED from [:react-native-screens] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1ba97fdefd969233de199c112910b947\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1ba97fdefd969233de199c112910b947\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bd4b55b38506ed45a38c8e179f80d65b\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bd4b55b38506ed45a38c8e179f80d65b\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
 MERGED from [:expo-file-system] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\0cf7e234e8a96ed7a28c1f1184df0b89\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\0cf7e234e8a96ed7a28c1f1184df0b89\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\cf9c024ed783237fce6d79dff3ddfc96\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\cf9c024ed783237fce6d79dff3ddfc96\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3017a25ce3cb2bf8b7edc16a81b382a0\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3017a25ce3cb2bf8b7edc16a81b382a0\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\9792dcc22ac78c7c5168afbedfc8b09c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\9792dcc22ac78c7c5168afbedfc8b09c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\214733ad5cad81eda2415bb80e421234\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\214733ad5cad81eda2415bb80e421234\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b9604666a0b9bbe1ab905eeb5622e5c4\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b9604666a0b9bbe1ab905eeb5622e5c4\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c4a0854b2c4c976f5fd7b439b5911773\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -448,8 +448,8 @@ MERGED from [com.google.android.material:material:1.1.0] C:\Users\jakem\.gradle\
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\863e0c3c6716935cd3657ad638fd992d\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\1cb9b9ea592aa2ea85233be252327dcf\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\42754f512b6255d0a9d0ecf2560b2cee\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\42754f512b6255d0a9d0ecf2560b2cee\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\11bb6f62648365abe3010d6689bd96c2\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\11bb6f62648365abe3010d6689bd96c2\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b1b165607eae60d70e4267b97e24514b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\28888a6f6660db47b3788df392c672a7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -492,8 +492,8 @@ MERGED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-
 MERGED from [androidx.core:core:1.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\3b41f2ef3d4a30256bbd9d1017371108\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\e9b634612e7afd6e65f893d0f7273c92\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\e9b634612e7afd6e65f893d0f7273c92\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\f16976a635030c1d93e19a07e5655a32\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\f16976a635030c1d93e19a07e5655a32\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\096a8f1603949d4f18a7cbc7eecc51f2\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\096a8f1603949d4f18a7cbc7eecc51f2\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\422ace6a75dd412e501b9bf85446fc1e\sqlite-2.0.1\AndroidManifest.xml:20:5-44
@@ -522,10 +522,10 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\jakem\.g
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\2ef959591ee3dfd7e7d0f130ebacb270\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\babedcb26ba2505096ea9fb87ec93180\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:8:5-10:41
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:8:5-10:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b940bc4e15a785829073e8ad9a73bb6e\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b940bc4e15a785829073e8ad9a73bb6e\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:8:5-10:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\4cd495c08d3b8e9905d54b1d57aced9a\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\4cd495c08d3b8e9905d54b1d57aced9a\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c114d4501470930b3986c4f9bd2da0fd\ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
 INJECTED from C:\Users\jakem\Desktop\osf project\react-osf\android\app\src\debug\AndroidManifest.xml
@@ -548,8 +548,8 @@ ADDED from [:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project
 		ADDED from [:unimodules-react-native-adapter] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-79
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:expo-updates] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-updates\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:13:5-79
-MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:13:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:13:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:13:5-79
 	android:name
 		ADDED from [:expo-updates] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-updates\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
@@ -591,19 +591,19 @@ ADDED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_mo
 	android:name
 		ADDED from [:expo-location] C:\Users\jakem\Desktop\osf project\react-osf\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-78
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\b3e207067cdafc62c39f5690af2d25be\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\bf48d5f0b8425ae3e6c472596e96207f\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\92f0c9b64acaaaa38970dd5937f35a43\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5ed99a4253c27cd7fe7d16ed919d90c7\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
 	android:exported
@@ -611,28 +611,28 @@ ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\tran
 	android:name
 		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
 	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
 uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
-ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
 	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
 service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
 service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
 service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
-ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\c7400bf4ecc00a34f9babda8e090feb9\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\jakem\.gradle\caches\transforms-2\files-2.1\be7a4110f0021d82bb1f17c7fea0c696\jetified-library-3.2.11\AndroidManifest.xml:26:13-120

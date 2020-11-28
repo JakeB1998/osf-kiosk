@@ -49,11 +49,19 @@ const isLandscape = () => {
 const tabBarButtonStyle = {
 
 }
+const disabledOpacityValue = 0.2;
+const activeOpacityValue = 1;
 // <Button title={url} onClick={this.someEvent}  />
 export default class App extends React.Component {
+  
   constructor(props){
     super(props);
-    
+    this.webView = null;
+      this.backBtn = null;
+      this.forwardBtn = null;
+      this.ableToGoBack = false;
+      this.ableToGoForward = false;
+      
     this.state = {url: homeURL, orientation: isPortrait() ? 'portrait' : 'landscape'}; 
     // Event Listener for orientation changes
     Dimensions.addEventListener('change', () => {
@@ -73,13 +81,17 @@ export default class App extends React.Component {
     this.webView.goBack();
     }
     */
-    this.webView.goBack();
+   if (this.ableToGoBack) {
+      this.webView.goBack();
+   }
     
   }
 
   goForward(){
     console.log("Going forward");
-    this.webView.goForward();
+    if (this.ableToGoForward){
+      this.webView.goForward();
+    }
   }
 
   goHome(){
@@ -109,23 +121,23 @@ export default class App extends React.Component {
    render(){
       const { url } = this.state;
       const title = url;
-      this.webView = null;
       
+
       return(
           <React.Fragment>
             
-            <View style={{ backgroundColor: '#9FA8DA' }}>
+            <View style={{ backgroundColor: 'tan' }}>
               <View style={ {width:1000,flexDirection:"row"}}>
-                <TouchableOpacity  activeOpacity={0.5} onPress = {() => {console.log("Click"); this.goBack()}}>
+                <TouchableOpacity  disabled= {!this.ableToGoBack} activeOpacity={this.disabled ? 0 : 0.5} onPress = {() => {console.log("Click"); this.goBack()}}>
                   <Image
                   source={require('./images/back-btn1.png')}
-                  style={{height:50, width:50}}
+                  style={{height:50, width:50, opacity:this.ableToGoBack ? activeOpacityValue :disabledOpacityValue}}
                   />
                 </TouchableOpacity>
-                <TouchableOpacity  activeOpacity={0.5}  onPress = {() => this.goForward()}>
+                <TouchableOpacity  disabled = {!this.ableToGoForward} activeOpacity={this.disabled ? 0 : 0.5}  onPress = {() => this.goForward()}>
                     <Image
                     source={require('./images/back-btn1.png')}
-                    style={{height:50, width:50,  transform: [{ rotate: '180deg' }]}}
+                    style={{height:50, width:50,  opacity:this.ableToGoForward ? activeOpacityValue :disabledOpacityValue, transform: [{ rotate: '180deg' }]}}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity  activeOpacity={0.5}   onPress = {() => this.goHome()}>
@@ -135,9 +147,10 @@ export default class App extends React.Component {
                     />
                 </TouchableOpacity>
               </View>
-              <View style= {{ position: 'relative', backgroundColor: 'red'}}>
+              <View style= {{ position: 'absolute', right: '50%', width:100, height: 50, flex:1,justifyContent: "center",alignItems: "center"}}>
                 <Text style = {styles.title}>OSF Kisok</Text>
               </View>
+              
           </View>
             <WebView ref = {(ref) => {
               this.webView = ref;
@@ -169,14 +182,21 @@ export default class App extends React.Component {
     handleWebViewNavigationStateChange = (newNavState) => {
       //window.alert(newNavState['title']);
       const {url} = newNavState;
+      if (url === homeURL){
+        this.ableToGoBack = false;
+        this.ableToGoForward = false;
+      }  else{
+        this.ableToGoBack = true;
+        this.ableToGoForward = false;
+      }
       this.state['url'] = url;
       console.log(newNavState);
-      
-      
+      this.forceUpdate();
       
     }
 
     forceUpdateState(caller,state,key,value){
+      
       state[key] = value;
       caller.setState(state);
     }
@@ -199,9 +219,20 @@ const styles = StyleSheet.create({
   },
   title:{
     flex:1,
-    width:100,
-    alignItems: 'center',
-    justifyContent: 'center'
+    position: 'relative',
+    textAlign: 'center',
+    textAlignVertical: "center"
+    
   },
   
 });
+
+/*
+<View style = {{position: 'absolute', width: 200, height: 50, backgroundColor: 'grey', right:0 , flexDirection:"row"}}>
+                <Text style = {styles.title}>hOLDER</Text>
+                <Image
+                    source={require('./images/beds.jpg')}
+                    style={{height:50, width:50, flex:1}}
+                  />
+              </View>
+              */
